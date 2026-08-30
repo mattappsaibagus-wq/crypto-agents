@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-08-31T00:15:44",
+  "timestamp": "2026-08-30T15:22:43",
   "cards": [
     {
-      "coin": "HNT",
+      "coin": "SKR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.147",
@@ -25,7 +25,7 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +72.8%; volume 9.8x normal; momentum + volume confirmed"
+        "**Why:** 24h +68.3%; volume 9.9x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "coin": "SKR",
+      "coin": "HNT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -61,7 +61,7 @@
       "details": [
         "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +18.1%; volume 2.1x normal; momentum + volume confirmed"
+        "**Why:** 24h +18.4%; volume 2.1x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -70,7 +70,17 @@
       "details": [
         "**Score:** 0.083",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 8.8x normal; momentum + volume confirmed; real liquidity"
+        "**Why:** volume 9.3x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
+      "coin": "PUMP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
@@ -80,16 +90,6 @@
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
         "**Status:** already in your holdings",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "HYPE",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
@@ -105,11 +105,22 @@
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "ZEC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SOL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
@@ -125,7 +136,7 @@
       ]
     },
     {
-      "coin": "ENA",
+      "coin": "HYPE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -146,18 +157,7 @@
       ]
     },
     {
-      "coin": "SOL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "AERO",
+      "coin": "ENA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -178,5 +178,5 @@
     }
   ],
   "signals": 26,
-  "workflow_url": ""
+  "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
