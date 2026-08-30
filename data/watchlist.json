@@ -1,0 +1,9 @@
+{
+  "holdings": [
+    { "symbol": "BTC", "amount": 0.05, "cost_basis_usd": 58000 },
+    { "symbol": "ETH", "amount": 0.5,  "cost_basis_usd": 3200 }
+  ],
+  "watchlist": [
+    "SOL", "AVAX", "LINK"
+  ]
+}

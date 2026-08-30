@@ -1,0 +1,501 @@
+[
+  {
+    "coin": "ZYLO",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$30,525,641",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.034015855071678744,
+      "coin_id": "zylo-ecosystem"
+    },
+    "timestamp": "2026-08-30T13:13:21.491906+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "PONS",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$228,401,153",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.3199386821917877,
+      "coin_id": "pons"
+    },
+    "timestamp": "2026-08-30T13:13:21.491939+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "SKR",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$112,736,402",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.016276046529579556,
+      "coin_id": "seeker"
+    },
+    "timestamp": "2026-08-30T13:13:21.491945+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "HNT",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$125,824,800",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.6751724694998467,
+      "coin_id": "helium"
+    },
+    "timestamp": "2026-08-30T13:13:21.491949+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "LIT",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$877,852,359",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 3.510069459387233,
+      "coin_id": "lighter"
+    },
+    "timestamp": "2026-08-30T13:13:21.491953+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "PUMP",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$1,932,761,164",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.004876506001577791,
+      "coin_id": "pump-fun"
+    },
+    "timestamp": "2026-08-30T13:13:21.491957+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "PENGU",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$579,676,685",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.009226263180129684,
+      "coin_id": "pudgy-penguins"
+    },
+    "timestamp": "2026-08-30T13:13:21.491961+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "STONKBROKER",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$41,673,530",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.026965704913524274,
+      "coin_id": "stonkbroker"
+    },
+    "timestamp": "2026-08-30T13:13:21.491965+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "UNI",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$3,285,245,229",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 5.272467621770453,
+      "coin_id": "uniswap"
+    },
+    "timestamp": "2026-08-30T13:13:21.491968+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "\u725b\u6765",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$109,144,586",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.10982206659360104,
+      "coin_id": "niu-lai"
+    },
+    "timestamp": "2026-08-30T13:13:21.491972+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "HYPE",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$18,612,698,589",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 83.6423817577181,
+      "coin_id": "hyperliquid"
+    },
+    "timestamp": "2026-08-30T13:13:21.491976+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "STONK",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$22,957,672",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.025405404779644602,
+      "coin_id": "stonk-3"
+    },
+    "timestamp": "2026-08-30T13:13:21.491979+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "SPX",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$529,023,990",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.5680341096735175,
+      "coin_id": "spx6900"
+    },
+    "timestamp": "2026-08-30T13:13:21.491983+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "CASHCAT",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$210,201,597",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.21243771793754665,
+      "coin_id": "cash-cat"
+    },
+    "timestamp": "2026-08-30T13:13:21.491987+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "ENA",
+    "signal": "microcap_opportunity",
+    "confidence": 0.55,
+    "source": "coingecko_trending",
+    "details": {
+      "mcap": "$1,594,750,634",
+      "vol": null,
+      "age_days": null,
+      "reasons": [
+        "trending on CoinGecko right now"
+      ],
+      "price": 0.16218575865834287,
+      "coin_id": "ethena"
+    },
+    "timestamp": "2026-08-30T13:13:21.491990+00:00",
+    "agent": "microcap"
+  },
+  {
+    "coin": "ZKP",
+    "signal": "whale_up",
+    "confidence": 0.85,
+    "source": "coingecko_market",
+    "details": {
+      "change_24h": 26.06298,
+      "vol": 118569113,
+      "vol_ratio": 9.97963598675073,
+      "reasons": [
+        "24h +26.1%",
+        "volume 10.0x normal",
+        "momentum + volume confirmed",
+        "real liquidity"
+      ],
+      "price": 0.058856,
+      "coin_id": "zkpass"
+    },
+    "timestamp": "2026-08-30T13:13:22.125752+00:00",
+    "agent": "whale"
+  },
+  {
+    "coin": "ZKC",
+    "signal": "whale_up",
+    "confidence": 0.85,
+    "source": "coingecko_market",
+    "details": {
+      "change_24h": 66.81122,
+      "vol": 77780867,
+      "vol_ratio": 4.110346892923117,
+      "reasons": [
+        "24h +66.8%",
+        "volume 4.1x normal",
+        "momentum + volume confirmed",
+        "real liquidity"
+      ],
+      "price": 0.064692,
+      "coin_id": "boundless"
+    },
+    "timestamp": "2026-08-30T13:13:22.125769+00:00",
+    "agent": "whale"
+  },
+  {
+    "coin": "ZKP",
+    "signal": "dd_result",
+    "confidence": 0.1,
+    "source": "duediligence",
+    "details": {
+      "reasons": [
+        "found on CoinGecko"
+      ],
+      "score_breakdown": {
+        "mcap": 0,
+        "vol": 0,
+        "ath_change_pct": 0,
+        "price": 0,
+        "sparkline_7d_flat": true,
+        "age_days": 0,
+        "rank": null,
+        "rag_status": "indexed_unverified"
+      }
+    },
+    "timestamp": "2026-08-30T13:14:23.316854+00:00",
+    "agent": "dd"
+  },
+  {
+    "coin": "ZKC",
+    "signal": "dd_result",
+    "confidence": 0.1,
+    "source": "duediligence",
+    "details": {
+      "reasons": [
+        "found on CoinGecko"
+      ],
+      "score_breakdown": {
+        "mcap": 0,
+        "vol": 0,
+        "ath_change_pct": 0,
+        "price": 0,
+        "sparkline_7d_flat": true,
+        "age_days": 0,
+        "rank": null,
+        "rag_status": "indexed_unverified"
+      }
+    },
+    "timestamp": "2026-08-30T13:14:23.316870+00:00",
+    "agent": "dd"
+  },
+  {
+    "coin": "ZYLO",
+    "signal": "dd_result",
+    "confidence": 0.1,
+    "source": "duediligence",
+    "details": {
+      "reasons": [
+        "found on CoinGecko"
+      ],
+      "score_breakdown": {
+        "mcap": 0,
+        "vol": 0,
+        "ath_change_pct": 0,
+        "price": 0,
+        "sparkline_7d_flat": true,
+        "age_days": 0,
+        "rank": null,
+        "rag_status": "indexed_unverified"
+      }
+    },
+    "timestamp": "2026-08-30T13:14:23.316877+00:00",
+    "agent": "dd"
+  },
+  {
+    "coin": "PONS",
+    "signal": "dd_result",
+    "confidence": 0.1,
+    "source": "duediligence",
+    "details": {
+      "reasons": [
+        "found on CoinGecko"
+      ],
+      "score_breakdown": {
+        "mcap": 0,
+        "vol": 0,
+        "ath_change_pct": 0,
+        "price": 0,
+        "sparkline_7d_flat": true,
+        "age_days": 0,
+        "rank": null,
+        "rag_status": "indexed_unverified"
+      }
+    },
+    "timestamp": "2026-08-30T13:14:23.316880+00:00",
+    "agent": "dd"
+  },
+  {
+    "coin": "SKR",
+    "signal": "dd_result",
+    "confidence": 0.1,
+    "source": "duediligence",
+    "details": {
+      "reasons": [
+        "found on CoinGecko"
+      ],
+      "score_breakdown": {
+        "mcap": 0,
+        "vol": 0,
+        "ath_change_pct": 0,
+        "price": 0,
+        "sparkline_7d_flat": true,
+        "age_days": 0,
+        "rank": null,
+        "rag_status": "indexed_unverified"
+      }
+    },
+    "timestamp": "2026-08-30T13:14:23.316884+00:00",
+    "agent": "dd"
+  },
+  {
+    "coin": "HNT",
+    "signal": "dd_result",
+    "confidence": 0.1,
+    "source": "duediligence",
+    "details": {
+      "reasons": [
+        "found on CoinGecko"
+      ],
+      "score_breakdown": {
+        "mcap": 0,
+        "vol": 0,
+        "ath_change_pct": 0,
+        "price": 0,
+        "sparkline_7d_flat": true,
+        "age_days": 0,
+        "rank": null,
+        "rag_status": "indexed_unverified"
+      }
+    },
+    "timestamp": "2026-08-30T13:14:23.316888+00:00",
+    "agent": "dd"
+  },
+  {
+    "coin": "LIT",
+    "signal": "dd_result",
+    "confidence": 0.3,
+    "source": "duediligence",
+    "details": {
+      "reasons": [
+        "found on CoinGecko",
+        "mcap > $5M ($876.8M)"
+      ],
+      "score_breakdown": {
+        "mcap": 876767228,
+        "vol": 35045435,
+        "ath_change_pct": -55.37827,
+        "price": 3.51,
+        "sparkline_7d_flat": true,
+        "age_days": 0,
+        "rank": 74,
+        "rag_status": "indexed"
+      }
+    },
+    "timestamp": "2026-08-30T13:14:23.316892+00:00",
+    "agent": "dd"
+  },
+  {
+    "coin": "PUMP",
+    "signal": "dd_result",
+    "confidence": 0.45,
+    "source": "duediligence",
+    "details": {
+      "reasons": [
+        "found on CoinGecko",
+        "mcap > $5M ($1929.8M)",
+        "healthy volume/mcap 0.10"
+      ],
+      "score_breakdown": {
+        "mcap": 1929848315,
+        "vol": 186946640,
+        "ath_change_pct": -44.85152,
+        "price": 0.00486359,
+        "sparkline_7d_flat": true,
+        "age_days": 0,
+        "rank": 45,
+        "rag_status": "indexed"
+      }
+    },
+    "timestamp": "2026-08-30T13:14:23.316896+00:00",
+    "agent": "dd"
+  }
+]
