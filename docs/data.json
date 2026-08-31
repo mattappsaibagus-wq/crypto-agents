@@ -1,40 +1,33 @@
 {
-  "timestamp": "2026-08-31T14:07:31",
+  "timestamp": "2026-08-31T22:56:35",
   "cards": [
     {
-      "coin": "ANIME",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.121",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** volume 3.2x normal; momentum + volume confirmed; real liquidity"
-      ]
-    },
-    {
-      "coin": "LA",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.121",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** volume 3.5x normal; momentum + volume confirmed; real liquidity"
-      ]
-    },
-    {
       "coin": "DEBIT",
-      "action": "WATCH",
+      "action": "BUY",
       "details": [
-        "**Score:** 0.117",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +18.9%; volume 8.9x normal; momentum + volume confirmed"
+        "**Score:** 0.194",
+        "**Signals:** 1 | **DD score:** 0.6",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** 24h +25.8%; volume 8.5x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "HEMI",
+      "coin": "PONS",
+      "action": "BUY",
+      "details": [
+        "**Score:** 0.167",
+        "**Signals:** 1 | **DD score:** 0.6",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZORA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +41.1%; volume 8.1x normal; momentum + volume confirmed"
+        "**Why:** 24h +17.4%; volume 4.2x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -43,30 +36,47 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +19.5%; volume 6.0x normal; momentum + volume confirmed"
+        "**Why:** 24h +23.8%; volume 5.7x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "ZORA",
+      "coin": "RAM",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.097",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +37.5%; volume 2.9x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "PONS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "UP",
+      "coin": "0G",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.097",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +39.1%; volume 2.6x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "HEMI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 7.9x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
+      "coin": "ANIME",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 3.2x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
+      "coin": "ARB",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -86,7 +96,7 @@
       ]
     },
     {
-      "coin": "LIT",
+      "coin": "UP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -96,7 +106,27 @@
       ]
     },
     {
-      "coin": "HNT",
+      "coin": "HYPE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "CASHCAT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -116,12 +146,31 @@
       ]
     },
     {
-      "coin": "BTC",
+      "coin": "HNT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "VIRTUAL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SUI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
@@ -137,7 +186,7 @@
       ]
     },
     {
-      "coin": "XMR",
+      "coin": "PI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -147,85 +196,16 @@
       ]
     },
     {
-      "coin": "UNI",
+      "coin": "VVV",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ETH",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "INDEX",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "XRP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "CRO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "MORPHO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZKC",
-      "action": "AVOID",
-      "details": [
-        "**Score:** -0.09",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -16.1%; volume 7.1x normal; real liquidity"
-      ]
-    },
-    {
-      "coin": "ZKP",
-      "action": "AVOID",
-      "details": [
-        "**Score:** -0.09",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -18.1%; volume 5.2x normal; real liquidity"
       ]
     }
   ],
-  "signals": 31,
+  "signals": 29,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
