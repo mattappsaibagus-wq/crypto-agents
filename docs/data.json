@@ -1,33 +1,31 @@
 {
-  "timestamp": "2026-09-02T04:46:24",
+  "timestamp": "2026-09-02T11:30:04",
   "cards": [
     {
-      "coin": "BTC",
+      "coin": "ARB",
       "action": "WATCH",
       "details": [
         "**Score:** 0.147",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Status:** already in your holdings",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "SOL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Status:** on your watchlist",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ACE",
+      "coin": "DEBIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +24.2%; volume 4.4x normal; momentum + volume confirmed"
+        "**Why:** 24h +16.4%; volume 5.9x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "LA",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.117",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +20.0%; volume 4.9x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -49,65 +47,26 @@
       ]
     },
     {
-      "coin": "UNI",
+      "coin": "BTC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
+        "**Status:** already in your holdings",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "DEBIT",
+      "coin": "ACE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.083",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 5.7x normal; momentum + volume confirmed; real liquidity"
+        "**Why:** volume 5.0x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
-      "coin": "UP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "SKR",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "WLD",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ARB",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "RAM",
+      "coin": "UNI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -127,12 +86,11 @@
       ]
     },
     {
-      "coin": "ETH",
+      "coin": "AAVE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
@@ -148,7 +106,7 @@
       ]
     },
     {
-      "coin": "ANSEM",
+      "coin": "SUI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -158,7 +116,57 @@
       ]
     },
     {
-      "coin": "\u725b\u6765",
+      "coin": "INDEX",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "UP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SYRUP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "XRP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "LIT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SPX",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -173,10 +181,10 @@
       "details": [
         "**Score:** -0.09",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -50.7%; volume 3.7x normal; real liquidity"
+        "**Why:** 24h -45.0%; volume 4.2x normal; real liquidity"
       ]
     }
   ],
-  "signals": 26,
+  "signals": 27,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
