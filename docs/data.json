@@ -1,32 +1,14 @@
 {
-  "timestamp": "2026-09-04T16:29:50",
+  "timestamp": "2026-09-04T20:51:54",
   "cards": [
     {
       "coin": "FLOCK",
       "action": "BUY",
       "details": [
-        "**Score:** 0.159",
-        "**Signals:** 2 | **DD score:** 0.45",
+        "**Score:** 0.171",
+        "**Signals:** 1 | **DD score:** 0.45",
         "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** trending on CoinGecko right now; 24h +62.7%; volume 3.6x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "PORTAL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.117",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +16.6%; volume 3.3x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "SHRUB",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +40.0%; volume 4.6x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -57,7 +39,7 @@
       ]
     },
     {
-      "coin": "LIT",
+      "coin": "SHRUB",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -75,47 +57,25 @@
       ]
     },
     {
-      "coin": "USELESS",
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "CASHCAT",
+      "coin": "PORTAL",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 3.3x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
-      "coin": "UNI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ENA",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PUMP",
+      "coin": "HYPE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -135,7 +95,39 @@
       ]
     },
     {
-      "coin": "AMC",
+      "coin": "BTC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "USELESS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SOL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "UNI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -146,6 +138,26 @@
     },
     {
       "coin": "TAO",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "CASHCAT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ASTER",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
