@@ -1,18 +1,26 @@
 {
-  "timestamp": "2026-09-04T20:51:54",
+  "timestamp": "2026-09-05T04:40:41",
   "cards": [
     {
-      "coin": "FLOCK",
-      "action": "BUY",
+      "coin": "LIT",
+      "action": "WATCH",
       "details": [
-        "**Score:** 0.171",
+        "**Score:** 0.147",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +40.0%; volume 4.6x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "CP",
+      "coin": "SHRUB",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "DASH",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -39,30 +47,12 @@
       ]
     },
     {
-      "coin": "SHRUB",
+      "coin": "FLOCK",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
+        "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "MARSCOIN",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "LIT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +30.8%; volume 2.9x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -71,11 +61,11 @@
       "details": [
         "**Score:** 0.083",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 3.3x normal; momentum + volume confirmed; real liquidity"
+        "**Why:** volume 3.1x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
-      "coin": "HYPE",
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -85,7 +75,7 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "NEAR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -106,7 +96,7 @@
       ]
     },
     {
-      "coin": "USELESS",
+      "coin": "CASHCAT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -116,18 +106,7 @@
       ]
     },
     {
-      "coin": "SOL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "UNI",
+      "coin": "ARB",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -147,7 +126,7 @@
       ]
     },
     {
-      "coin": "CASHCAT",
+      "coin": "USELESS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -157,7 +136,7 @@
       ]
     },
     {
-      "coin": "ASTER",
+      "coin": "MARSCOIN",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -165,8 +144,37 @@
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
+    },
+    {
+      "coin": "ZEN",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ENA",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "AMC",
+      "action": "AVOID",
+      "details": [
+        "**Score:** -0.09",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h -16.3%; volume 28.8x normal; real liquidity"
+      ]
     }
   ],
-  "signals": 25,
+  "signals": 26,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
