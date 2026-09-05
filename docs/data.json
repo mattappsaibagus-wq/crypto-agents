@@ -1,35 +1,54 @@
 {
-  "timestamp": "2026-09-05T04:40:41",
+  "timestamp": "2026-09-05T10:45:26",
   "cards": [
     {
-      "coin": "LIT",
+      "coin": "FLOCK",
+      "action": "BUY",
+      "details": [
+        "**Score:** 0.171",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** 24h +33.4%; volume 6.2x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "NOM",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
+        "**Score:** 0.117",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +22.1%; volume 12.8x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "PONS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "CP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "MARSCOIN",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
       "coin": "SHRUB",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "DASH",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PONS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -47,25 +66,16 @@
       ]
     },
     {
-      "coin": "FLOCK",
+      "coin": "DASH",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.097",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +30.8%; volume 2.9x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "PORTAL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.083",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 3.1x normal; momentum + volume confirmed; real liquidity"
-      ]
-    },
-    {
-      "coin": "PENGU",
+      "coin": "ARB",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -75,7 +85,37 @@
       ]
     },
     {
-      "coin": "NEAR",
+      "coin": "PUMP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "UNI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "USELESS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -96,7 +136,7 @@
       ]
     },
     {
-      "coin": "CASHCAT",
+      "coin": "STONK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -106,57 +146,7 @@
       ]
     },
     {
-      "coin": "ARB",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "TAO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "USELESS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "MARSCOIN",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZEN",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ENA",
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -167,11 +157,12 @@
     },
     {
       "coin": "AMC",
-      "action": "AVOID",
+      "action": "WATCH",
       "details": [
-        "**Score:** -0.09",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -16.3%; volume 28.8x normal; real liquidity"
+        "**Score:** 0.012",
+        "**Signals:** 2 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now; 24h -55.3%; volume 2.7x normal; real liquidity"
       ]
     }
   ],
