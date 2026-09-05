@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-09-05T15:21:42",
+  "timestamp": "2026-09-05T20:30:08",
   "cards": [
     {
-      "coin": "CASHCAT",
+      "coin": "PONS",
       "action": "BUY",
       "details": [
         "**Score:** 0.167",
@@ -12,12 +12,12 @@
       ]
     },
     {
-      "coin": "NOM",
+      "coin": "CP",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.117",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +19.9%; volume 13.9x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
@@ -39,34 +39,64 @@
       ]
     },
     {
-      "coin": "PONS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ASTER",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "TUT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +24.3%; volume 2.4x normal; momentum + volume confirmed"
+        "**Why:** 24h +19.7%; volume 2.5x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "FLOCK",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 4.6x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
+      "coin": "NOM",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 14.5x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
+      "coin": "UNI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
       "coin": "PENGU",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "USELESS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ARB",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -96,26 +126,6 @@
       ]
     },
     {
-      "coin": "AMC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "MARSCOIN",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "PUMP",
       "action": "WATCH",
       "details": [
@@ -126,7 +136,7 @@
       ]
     },
     {
-      "coin": "INDEX",
+      "coin": "CASHCAT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -136,7 +146,7 @@
       ]
     },
     {
-      "coin": "UNI",
+      "coin": "UP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -146,18 +156,7 @@
       ]
     },
     {
-      "coin": "SOL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "HYPE",
+      "coin": "DASH",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -167,13 +166,13 @@
       ]
     },
     {
-      "coin": "MOO",
+      "coin": "STONK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** volume/mcap 0.55 (>0.3); 24h momentum +51.1%; ranked #722"
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
@@ -182,7 +181,7 @@
       "details": [
         "**Score:** -0.09",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -15.7%; volume 3.0x normal; real liquidity"
+        "**Why:** 24h -26.2%; volume 4.0x normal; real liquidity"
       ]
     }
   ],
