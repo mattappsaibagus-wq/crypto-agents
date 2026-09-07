@@ -1,8 +1,18 @@
 {
-  "timestamp": "2026-09-07T12:47:25",
+  "timestamp": "2026-09-07T21:36:51",
   "cards": [
     {
       "coin": "STONK",
+      "action": "BUY",
+      "details": [
+        "**Score:** 0.167",
+        "**Signals:** 1 | **DD score:** 0.6",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZEC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.147",
@@ -20,24 +30,6 @@
       ]
     },
     {
-      "coin": "CNPY",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZEC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "PONS",
       "action": "WATCH",
       "details": [
@@ -47,12 +39,21 @@
       ]
     },
     {
-      "coin": "DOOD",
+      "coin": "PUMP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ACE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +35.9%; volume 2.4x normal; momentum + volume confirmed"
+        "**Why:** 24h +16.1%; volume 2.1x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -61,11 +62,11 @@
       "details": [
         "**Score:** 0.083",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 7.7x normal; momentum + volume confirmed; real liquidity"
+        "**Why:** volume 7.5x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -75,7 +76,7 @@
       ]
     },
     {
-      "coin": "PEAQ",
+      "coin": "INJ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -95,7 +96,7 @@
       ]
     },
     {
-      "coin": "ASTER",
+      "coin": "AERO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -105,7 +106,7 @@
       ]
     },
     {
-      "coin": "HYPE",
+      "coin": "KAS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -115,7 +116,7 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "RAY",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -125,7 +126,7 @@
       ]
     },
     {
-      "coin": "ARB",
+      "coin": "TAO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -146,7 +147,7 @@
       ]
     },
     {
-      "coin": "USELESS",
+      "coin": "PEAQ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -156,13 +157,23 @@
       ]
     },
     {
-      "coin": "CAKE",
+      "coin": "PENDLE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "FLOCK",
+      "action": "AVOID",
+      "details": [
+        "**Score:** -0.052",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** 24h -20.3%; volume 2.8x normal; real liquidity"
       ]
     },
     {
@@ -171,10 +182,10 @@
       "details": [
         "**Score:** -0.09",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -22.2%; volume 8.8x normal; real liquidity"
+        "**Why:** 24h -21.3%; volume 8.5x normal; real liquidity"
       ]
     }
   ],
-  "signals": 26,
+  "signals": 27,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
