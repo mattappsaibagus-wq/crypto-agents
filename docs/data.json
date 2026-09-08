@@ -1,45 +1,27 @@
 {
-  "timestamp": "2026-09-08T16:45:02",
+  "timestamp": "2026-09-08T21:16:23",
   "cards": [
     {
-      "coin": "SOPH",
+      "coin": "VVV",
       "action": "BUY",
       "details": [
-        "**Score:** 0.171",
-        "**Signals:** 1 | **DD score:** 0.45",
+        "**Score:** 0.167",
+        "**Signals:** 1 | **DD score:** 0.6",
         "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +31.1%; volume 7.7x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "VVV",
+      "coin": "KII",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Score:** 0.137",
+        "**Signals:** 1 | **DD score:** 0.6",
+        "**Why:** volume 9.6x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
       "coin": "PONS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "USELESS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZEC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -57,6 +39,24 @@
       ]
     },
     {
+      "coin": "USELESS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "LIT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
       "coin": "DOT",
       "action": "WATCH",
       "details": [
@@ -66,12 +66,12 @@
       ]
     },
     {
-      "coin": "KII",
+      "coin": "ZEC",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.083",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 9.7x normal; momentum + volume confirmed; real liquidity"
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
@@ -86,17 +86,7 @@
       ]
     },
     {
-      "coin": "PENGU",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "RAY",
+      "coin": "HYPE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -116,6 +106,16 @@
       ]
     },
     {
+      "coin": "ZCAT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
       "coin": "ARB",
       "action": "WATCH",
       "details": [
@@ -126,7 +126,7 @@
       ]
     },
     {
-      "coin": "TAO",
+      "coin": "AERO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "KAS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -146,17 +146,7 @@
       ]
     },
     {
-      "coin": "HYPE",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PEAQ",
+      "coin": "AIOZ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -166,6 +156,6 @@
       ]
     }
   ],
-  "signals": 25,
+  "signals": 24,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
