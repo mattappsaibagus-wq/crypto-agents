@@ -1,18 +1,8 @@
 {
-  "timestamp": "2026-09-07T21:36:51",
+  "timestamp": "2026-09-08T04:51:36",
   "cards": [
     {
-      "coin": "STONK",
-      "action": "BUY",
-      "details": [
-        "**Score:** 0.167",
-        "**Signals:** 1 | **DD score:** 0.6",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZEC",
+      "coin": "USELESS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.147",
@@ -21,12 +11,12 @@
       ]
     },
     {
-      "coin": "FIRO",
+      "coin": "SOPH",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Score:** 0.109",
+        "**Signals:** 2 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now; 24h +117.2%; volume 3.8x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -39,7 +29,7 @@
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "STONK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -48,35 +38,34 @@
       ]
     },
     {
-      "coin": "ACE",
+      "coin": "AERO",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.097",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +16.1%; volume 2.1x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "DEBIT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.083",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 7.5x normal; momentum + volume confirmed; real liquidity"
-      ]
-    },
-    {
-      "coin": "PENGU",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "INJ",
+      "coin": "CP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "IOST",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.097",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +49.8%; volume 2.2x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "PUMP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -96,26 +85,6 @@
       ]
     },
     {
-      "coin": "AERO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "KAS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "RAY",
       "action": "WATCH",
       "details": [
@@ -126,7 +95,37 @@
       ]
     },
     {
-      "coin": "TAO",
+      "coin": "PENGU",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZEC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "NEAR",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -147,7 +146,7 @@
       ]
     },
     {
-      "coin": "PEAQ",
+      "coin": "KAS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -157,35 +156,15 @@
       ]
     },
     {
-      "coin": "PENDLE",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "FLOCK",
-      "action": "AVOID",
-      "details": [
-        "**Score:** -0.052",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** 24h -20.3%; volume 2.8x normal; real liquidity"
-      ]
-    },
-    {
-      "coin": "HEMI",
+      "coin": "DOOD",
       "action": "AVOID",
       "details": [
         "**Score:** -0.09",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -21.3%; volume 8.5x normal; real liquidity"
+        "**Why:** 24h -19.0%; volume 3.6x normal; real liquidity"
       ]
     }
   ],
-  "signals": 27,
+  "signals": 26,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
