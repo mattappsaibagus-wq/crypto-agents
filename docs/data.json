@@ -1,26 +1,36 @@
 {
-  "timestamp": "2026-09-08T04:51:36",
+  "timestamp": "2026-09-08T11:29:27",
   "cards": [
     {
-      "coin": "USELESS",
+      "coin": "SOPH",
+      "action": "BUY",
+      "details": [
+        "**Score:** 0.159",
+        "**Signals:** 2 | **DD score:** 0.45",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** trending on CoinGecko right now; 24h +103.5%; volume 6.6x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "CHUMP",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "SOPH",
+      "coin": "PONS",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.109",
-        "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h +117.2%; volume 3.8x normal; momentum + volume confirmed"
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "PONS",
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -38,36 +48,36 @@
       ]
     },
     {
+      "coin": "ZEC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "USELESS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "KII",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 9.5x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
       "coin": "AERO",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "CP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "IOST",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.097",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +49.8%; volume 2.2x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "PUMP",
-      "action": "WATCH",
-      "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
@@ -75,17 +85,18 @@
       ]
     },
     {
-      "coin": "ZCAT",
+      "coin": "SOL",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "RAY",
+      "coin": "HYPE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -105,27 +116,18 @@
       ]
     },
     {
-      "coin": "ZEC",
+      "coin": "ETH",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "NEAR",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PI",
+      "coin": "CP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -146,7 +148,7 @@
       ]
     },
     {
-      "coin": "KAS",
+      "coin": "NEAR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -154,17 +156,8 @@
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
-    },
-    {
-      "coin": "DOOD",
-      "action": "AVOID",
-      "details": [
-        "**Score:** -0.09",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -19.0%; volume 3.6x normal; real liquidity"
-      ]
     }
   ],
-  "signals": 26,
+  "signals": 25,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
