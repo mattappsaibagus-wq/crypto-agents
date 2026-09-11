@@ -1,6 +1,16 @@
 {
-  "timestamp": "2026-09-10T20:58:39",
+  "timestamp": "2026-09-11T04:51:47",
   "cards": [
+    {
+      "coin": "SAGA",
+      "action": "BUY",
+      "details": [
+        "**Score:** 0.171",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** 24h +15.2%; volume 8.0x normal; momentum + volume confirmed"
+      ]
+    },
     {
       "coin": "STONK",
       "action": "BUY",
@@ -12,25 +22,7 @@
       ]
     },
     {
-      "coin": "DEBIT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.117",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +28.3%; volume 6.5x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "VTHO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.117",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +42.5%; volume 3.1x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "LAPTOP",
+      "coin": "RAY",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -39,7 +31,7 @@
       ]
     },
     {
-      "coin": "ZANO",
+      "coin": "LAPTOP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -57,60 +49,30 @@
       ]
     },
     {
-      "coin": "BFC",
+      "coin": "ZANO",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.097",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +270.4%; volume 2.0x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "UP",
+      "coin": "BTC",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.097",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +21.1%; volume 2.8x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "VVV",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Status:** already in your holdings",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "ZRO",
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PENGU",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "NEAR",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -125,7 +87,7 @@
       ]
     },
     {
-      "coin": "CASHCAT",
+      "coin": "PUMP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -135,7 +97,7 @@
       ]
     },
     {
-      "coin": "RAY",
+      "coin": "VVV",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -145,12 +107,11 @@
       ]
     },
     {
-      "coin": "BTC",
+      "coin": "MET",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
@@ -167,7 +128,7 @@
       ]
     },
     {
-      "coin": "MARSCOIN",
+      "coin": "CASHCAT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -177,7 +138,7 @@
       ]
     },
     {
-      "coin": "EGLD",
+      "coin": "PRL",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -187,16 +148,36 @@
       ]
     },
     {
-      "coin": "IOST",
+      "coin": "TAO",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "VTHO",
       "action": "AVOID",
       "details": [
         "**Score:** -0.052",
         "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** 24h -52.9%; volume 2.8x normal; real liquidity"
+        "**Why:** 24h -25.0%; volume 2.4x normal; real liquidity"
+      ]
+    },
+    {
+      "coin": "BFC",
+      "action": "AVOID",
+      "details": [
+        "**Score:** -0.052",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** 24h -16.8%; volume 2.3x normal; real liquidity"
       ]
     }
   ],
-  "signals": 28,
+  "signals": 26,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
