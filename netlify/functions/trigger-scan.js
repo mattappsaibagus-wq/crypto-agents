@@ -8,7 +8,9 @@ exports.handler = async (event, context) => {
     if (!githubToken) {
       return {
         statusCode: 500,
-        body: JSON.stringify({ error: 'GitHub token not configured in Netlify' })
+        body: JSON.stringify({
+          error: 'GitHub token not configured in Netlify. Please add a GITHUB_TOKEN environment variable in Netlify Site Settings → Environment with repo scope.'
+        })
       };
     }
 

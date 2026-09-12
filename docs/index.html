@@ -511,10 +511,10 @@ document.getElementById('runBtn').addEventListener('click', async function(e) {
     if (data.success) {
       statusEl.textContent = 'Scan triggered! Results will appear when the pipeline completes.';
     } else {
-      statusEl.textContent = 'Scan trigger failed: ' + (data.error || 'Unknown error') + '. Retrying will show latest results.';
+      statusEl.textContent = 'Scan trigger failed: ' + (data.error || 'Unknown error') + '. Please set GITHUB_TOKEN in Netlify Site Settings → Environment.';
     }
   } catch (err) {
-    statusEl.textContent = 'Scan trigger error: ' + err.message + '. Retrying will show latest results.';
+    statusEl.textContent = 'Scan trigger error: ' + err.message + '. Please set GITHUB_TOKEN in Netlify Site Settings → Environment.';
   }
   btn.textContent = '▶ Run Full Scan Now';
   btn.disabled = false;
