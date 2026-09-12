@@ -671,24 +671,30 @@ function showActionModal(coin, action) {
   loadCoinStats(coin);
 }
 
-const coinIdCache = new Map();
+const marketDataCache = new Map();
+let chartRequestId = 0;
+let statsRequestId = 0;
 
-async function resolveCoinId(symbol) {
-  const key = symbol.toUpperCase();
-  if (coinIdCache.has(key)) return coinIdCache.get(key);
-  const response = await fetch(`https://api.coingecko.com/api/v3/search?query=${encodeURIComponent(symbol)}`);
-  if (!response.ok) throw new Error('Coin lookup failed');
-  const data = await response.json();
-  const exact = (data.coins || [])
-    .filter(item => item.symbol && item.symbol.toUpperCase() === key)
-    .sort((a, b) => (a.market_cap_rank || Number.MAX_SAFE_INTEGER) - (b.market_cap_rank || Number.MAX_SAFE_INTEGER))[0];
-  const match = exact || (data.coins || [])[0];
-  if (!match) throw new Error('Coin not found');
-  coinIdCache.set(key, match.id);
-  return match.id;
+async function getMarketData(coin, days) {
+  const key = `${coin.toUpperCase()}:${days}`;
+  if (!marketDataCache.has(key)) {
+    const request = fetch(`/api/coin-market?symbol=${encodeURIComponent(coin)}&days=${days}`)
+      .then(async response => {
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok) throw new Error(data.error || 'Market data request failed');
+        return data;
+      })
+      .catch(error => {
+        marketDataCache.delete(key);
+        throw error;
+      });
+    marketDataCache.set(key, request);
+  }
+  return marketDataCache.get(key);
 }
 
 async function loadCoinChart(coin, timeframe = '24h', clickedButton = null) {
+  const requestId = ++chartRequestId;
   const loading = document.getElementById('chartLoading');
   if (!loading) return;
   loading.style.display = 'block';
@@ -698,26 +704,33 @@ async function loadCoinChart(coin, timeframe = '24h', clickedButton = null) {
     clickedButton.classList.add('active');
   }
   try {
-    const coinId = await resolveCoinId(coin);
     const days = timeframe === '7d' ? 7 : timeframe === '30d' ? 30 : 1;
-    const response = await fetch(`https://api.coingecko.com/api/v3/coins/${coinId}/ohlc?vs_currency=usd&days=${days}`);
-    if (!response.ok) throw new Error('OHLC data failed');
-    const rows = await response.json();
-    if (!Array.isArray(rows) || !rows.length) throw new Error('No OHLC data');
-    const candles = rows.map(([x, o, h, l, c]) => ({ x, o, h, l, c }));
+    const data = await getMarketData(coin, days);
+    if (requestId !== chartRequestId) return;
     const canvas = document.getElementById('coinChart');
     if (!canvas) return;
     if (window.myCoinChart) window.myCoinChart.destroy();
+    const isCandlestick = data.chartType === 'candlestick';
+    const chartPoints = isCandlestick
+      ? data.points.map(([x, o, h, l, c]) => ({ x, o, h, l, c }))
+      : data.points.map(([x, y]) => ({ x, y }));
     window.myCoinChart = new Chart(canvas.getContext('2d'), {
-      type: 'candlestick',
-      data: { datasets: [{ label: `${coin} · ${timeframe}`, data: candles }] },
+      type: isCandlestick ? 'candlestick' : 'line',
+      data: { datasets: [{
+        label: `${coin} · ${timeframe}`,
+        data: chartPoints,
+        borderColor: '#78d5bd', backgroundColor: 'rgba(120,213,189,.12)',
+        borderWidth: 2, pointRadius: 0, tension: .18, fill: !isCandlestick
+      }] },
       options: {
         responsive: true, maintainAspectRatio: false, parsing: false,
         plugins: {
           legend: { display: false },
           tooltip: { callbacks: { label: context => {
             const v = context.raw;
-            return `O ${formatPrice(v.o)}  H ${formatPrice(v.h)}  L ${formatPrice(v.l)}  C ${formatPrice(v.c)}`;
+            return isCandlestick
+              ? `O ${formatPrice(v.o)}  H ${formatPrice(v.h)}  L ${formatPrice(v.l)}  C ${formatPrice(v.c)}`
+              : formatPrice(v.y);
           } } }
         },
         scales: {
@@ -729,7 +742,7 @@ async function loadCoinChart(coin, timeframe = '24h', clickedButton = null) {
     loading.style.display = 'none';
   } catch (error) {
     console.warn('Failed to load candlestick data:', error);
-    loading.textContent = 'Candlestick data unavailable';
+    if (requestId === chartRequestId) loading.textContent = error.message || 'Chart temporarily unavailable';
   }
 }
 
@@ -754,19 +767,19 @@ function setChange(id, value) {
 }
 
 async function loadCoinStats(coin) {
+  const requestId = ++statsRequestId;
   try {
-    const coinId = await resolveCoinId(coin);
-    const response = await fetch(`https://api.coingecko.com/api/v3/coins/${coinId}?localization=false&tickers=false&community_data=false&developer_data=false&sparkline=false&market_data=true`);
-    if (!response.ok) throw new Error('Market data failed');
-    const data = await response.json();
-    const market = data.market_data || {};
-    setChange('dailyChange', market.price_change_percentage_24h);
-    setChange('weeklyChange', market.price_change_percentage_7d);
+    const data = await getMarketData(coin, 1);
+    if (requestId !== statsRequestId) return;
+    const market = data.stats || {};
+    setChange('dailyChange', market.dailyChange);
+    setChange('weeklyChange', market.weeklyChange);
     const highEl = document.getElementById('high24h');
     const lowEl = document.getElementById('low24h');
-    if (highEl) highEl.textContent = formatPrice(market.high_24h && market.high_24h.usd);
-    if (lowEl) lowEl.textContent = formatPrice(market.low_24h && market.low_24h.usd);
+    if (highEl) highEl.textContent = formatPrice(market.high24h);
+    if (lowEl) lowEl.textContent = formatPrice(market.low24h);
   } catch (error) {
+    if (requestId !== statsRequestId) return;
     console.warn('Failed to load coin stats:', error);
     setChange('dailyChange', null);
     setChange('weeklyChange', null);
