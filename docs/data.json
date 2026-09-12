@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-12T15:25:52",
+  "timestamp": "2026-09-12T15:38:57",
   "cards": [
     {
       "coin": "STORJ",
@@ -7,29 +7,11 @@
       "details": [
         "**Score:** 0.141",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +53.1%; volume 2.7x normal; momentum + volume confirmed"
+        "**Why:** 24h +52.0%; volume 2.8x normal; momentum + volume confirmed"
       ]
     },
     {
       "coin": "PONS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "AI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "LAPTOP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -47,7 +29,7 @@
       ]
     },
     {
-      "coin": "ETHFI",
+      "coin": "LAPTOP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -56,36 +38,34 @@
       ]
     },
     {
-      "coin": "TREE",
+      "coin": "PENGU",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "AI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SOPH",
       "action": "WATCH",
       "details": [
         "**Score:** 0.083",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 6.2x normal; momentum + volume confirmed; real liquidity"
+        "**Why:** volume 3.1x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
       "coin": "HYPE",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PENGU",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "LSK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -116,18 +96,7 @@
       ]
     },
     {
-      "coin": "ETH",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "USELESS",
+      "coin": "LSK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -137,7 +106,17 @@
       ]
     },
     {
-      "coin": "XMR",
+      "coin": "ETHFI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "UNI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -157,12 +136,32 @@
       ]
     },
     {
+      "coin": "PRL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "JUP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
       "coin": "EMBER",
       "action": "WATCH",
       "details": [
         "**Score:** 0.016",
         "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h -43.0%; volume 2.6x normal; real liquidity"
+        "**Why:** trending on CoinGecko right now; 24h -41.2%; volume 2.6x normal; real liquidity"
       ]
     }
   ],
