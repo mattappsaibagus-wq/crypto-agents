@@ -1,23 +1,22 @@
 {
-  "timestamp": "2026-09-12T14:29:25",
+  "timestamp": "2026-09-12T14:42:19",
   "cards": [
-    {
-      "coin": "AI",
-      "action": "BUY",
-      "details": [
-        "**Score:** 0.167",
-        "**Signals:** 1 | **DD score:** 0.6",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
     {
       "coin": "STORJ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.141",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +50.8%; volume 2.9x normal; momentum + volume confirmed"
+        "**Why:** 24h +51.0%; volume 2.5x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "AI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
@@ -57,23 +56,12 @@
       ]
     },
     {
-      "coin": "SOL",
+      "coin": "TREE",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
+        "**Score:** 0.083",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Status:** on your watchlist",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZEC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** volume 6.0x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
@@ -83,6 +71,57 @@
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
         "**Status:** already in your holdings",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "USELESS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "NEAR",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "HYPE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SOL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZZZ",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
@@ -109,38 +148,7 @@
       ]
     },
     {
-      "coin": "BTC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "VVV",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "NOCK",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "NEAR",
+      "coin": "AAVE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -155,10 +163,10 @@
       "details": [
         "**Score:** 0.016",
         "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h -34.1%; volume 2.6x normal; real liquidity"
+        "**Why:** trending on CoinGecko right now; 24h -37.2%; volume 2.6x normal; real liquidity"
       ]
     }
   ],
-  "signals": 25,
+  "signals": 26,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
