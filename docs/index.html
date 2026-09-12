@@ -8,14 +8,10 @@
   :root {
     --bg: #0d1117; --surface: #161b22; --surface2: #21262d;
     --border: #30363d; --text: #e6edf3; --muted: #8b949e;
-    --green: #3fb950; --yellow: #d29922; --red: #f85149;
-    --accent: #58a6ff;
-    --accent-dark: #4791d6;
-    --green-dark: #2ea043;
-    --yellow-dark: #b08800;
-    --red-dark: #d12a2a;
-    --gray: #6e7681;
-    --live: #3fb950;
+    --green: #3fb950; --yellow: #d29922; --red: #f85149; --red-dark: #d12a2a;
+    --accent: #58a6ff; --accent-dark: #4791d6;
+    --green-dark: #2ea043; --yellow-dark: #b08800;
+    --gray: #6e7681; --live: #3fb950;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -28,19 +24,45 @@
   header h1 { font-size: 1.4rem; font-weight: 600; }
   header p { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
 
+  /* Premium Disclaimer Banner */
+  .disclaimer-banner {
+    background: linear-gradient(135deg, rgba(10,10,20,0.8), rgba(20,20,40,0.9));
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-left: 4px solid var(--accent);
+  }
+  .disclaimer-text {
+    font-size: 0.75rem;
+    color: var(--muted);
+    line-height: 1.4;
+    margin: 0;
+  }
+  .disclaimer-text strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
   .btn {
     display: block; width: 100%; padding: 14px; border: none; border-radius: 10px;
     font-size: 1rem; font-weight: 600; cursor: pointer;
     margin: 12px 0; text-align: center; text-decoration: none;
-    transition: all 0.2s ease;
+    transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
     border: none;
     background: var(--accent);
     color: #000;
     font-family: inherit;
+    letter-spacing: 0.5px;
   }
-  .btn-primary { background: var(--accent); color: #000; }
-  .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-  .btn-primary:active { transform: translateY(0); }
+  .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-dark)); color: #000; }
+  .btn-primary:hover { 
+    opacity: 0.95; 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(88,166,255,0.25);
+    letter-spacing: 1px;
+  }
+  .btn-primary:active { transform: translateY(-1px); }
   .btn-secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
 
   .status-bar {
@@ -56,12 +78,22 @@
     content: "●";
     color: var(--live);
     font-size: 0.875rem;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
   }
 
   .summary-row { display: flex; gap: 8px; margin-bottom: 16px; }
   .summary-chip {
     flex: 1; text-align: center; padding: 12px 8px; border-radius: 10px;
     font-weight: 700; font-size: 1.1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .summary-chip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
   .chip-buy { background: rgba(63,185,80,0.15); color: var(--green); }
   .chip-watch { background: rgba(210,153,34,0.15); color: var(--yellow); }
@@ -72,17 +104,17 @@
     background: var(--surface); border: 1px solid var(--border);
     border-radius: 10px; padding: 14px; margin-bottom: 10px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
     display: flex;
     flex-direction: column;
   }
   .card:hover {
     background: var(--surface2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
   }
   .card:active {
-    transform: translateY(0);
+    transform: translateY(-1px);
   }
   .card-header {
     display: flex; justify-content: space-between; align-items: center;
@@ -90,33 +122,60 @@
     flex-wrap: wrap;
     gap: 8px;
   }
-  .coin-name { font-weight: 700; font-size: 1.05rem; }
+  .coin-name { font-weight: 700; font-size: 1.05rem; letter-spacing: 0.5px; }
+  
+  /* Super Premium Action Badges */
   .action-badge {
     display: inline-flex;
     align-items: center;
-    padding: 3px 10px;
+    padding: 4px 12px;
     border-radius: 20px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 1px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
     border: none;
     color: #fff;
     white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    justify-content: center;
   }
   .action-badge:hover {
-    opacity: 0.9;
+    opacity: 0.95;
     transform: translateY(-2px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
   .action-badge:active {
     transform: translateY(0);
   }
-  .badge-buy { background: var(--green); }
-  .badge-watch { background: var(--yellow); color: #000; }
-  .badge-sell { background: var(--red); }
-  .badge-avoid { background: var(--red-dark); }
+  .action-badge::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+  }
+  .action-badge:hover::after {
+    left: 100%;
+  }
+  .badge-buy { 
+    background: linear-gradient(135deg, var(--green), var(--green-dark));
+  }
+  .badge-watch { 
+    background: linear-gradient(135deg, var(--yellow), var(--yellow-dark));
+    color: #000;
+  }
+  .badge-sell { 
+    background: linear-gradient(135deg, var(--red), var(--red-dark));
+  }
+  .badge-avoid { 
+    background: linear-gradient(135deg, var(--red), var(--red-dark));
+  }
   .card-details { color: var(--muted); font-size: 0.85rem; margin-top: auto; }
   .card-details li { margin-bottom: 3px; list-style: none; }
   .card-details li::before { content: "· "; color: var(--accent); }
@@ -127,7 +186,7 @@
   /* Modal styles */
   .modal-overlay {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7); display: none; align-items: center;
+    background: rgba(0,0,0,0.75); display: none; align-items: center;
     justify-content: center; z-index: 1000;
   }
   .modal-content {
@@ -136,7 +195,7 @@
     overflow-y: auto; position: relative;
     border: 1px solid var(--border);
     box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-    animation: modalFadeIn 0.3s ease;
+    animation: modalFadeIn 0.3s cubic-bezier(0.4,0,0.2,1);
   }
   @keyframes modalFadeIn {
     from { opacity: 0; transform: translateY(-20px); }
@@ -154,6 +213,7 @@
     background: none; border: none; font-size: 1.5rem;
     line-height: 1; color: var(--muted); cursor: pointer;
     padding: 4px 8px; border-radius: 4px;
+    transition: color 0.2s, background 0.2s;
   }
   .modal-close:hover { color: var(--text); background: var(--surface2); }
   .modal-body { padding: 20px; }
@@ -176,6 +236,11 @@
   <h1>⚡ Crypto Agent Team</h1>
   <p id="lastRun">Loading...</p>
 </header>
+
+<!-- Premium Disclaimer Banner -->
+<div class="disclaimer-banner">
+  <p class="disclaimer-text"><strong>Disclaimer:</strong> Crypto Agent Team is a personal research tool that watches cryptocurrency markets and turns signals into clear, easy-to-read labels. Specialized agents scan prices, volume, news, whale activity, and wallet flows to provide BUY, HOLD, SELL, WATCH, or AVOID labels for each coin. These labels are informational outputs for research purposes only — not financial advice.</p>
+</div>
 
 <div class="status-bar">
   <span class="live-indicator">Live</span>
@@ -226,18 +291,15 @@ async function loadData() {
     if (data.timestamp) {
       document.getElementById('lastRun').textContent =
         'Last scan: ' + new Date(data.timestamp).toLocaleString();
-      // Update lastTimestamp for polling comparison
       lastTimestamp = data.timestamp;
     }
 
-    // Set the button href to workflow_url (if available)
     const runBtn = document.getElementById('runBtn');
     if (data.workflow_url) {
       runBtn.href = data.workflow_url;
     } else {
-      runBtn.href = '#'; // fallback
+      runBtn.href = '#';
     }
-    // Keep target="_blank" and rel="noopener" as set in HTML
 
     document.getElementById('signalCount').textContent = data.signals + ' signals';
     document.getElementById('updated').textContent =
@@ -276,10 +338,8 @@ async function loadData() {
     });
     document.getElementById('cards').innerHTML = html || '<div class="empty">No results</div>';
 
-    // Add click listeners to cards (for coin details)
     document.querySelectorAll('#cards .card').forEach(card => {
       card.addEventListener('click', function(e) {
-        // Prevent triggering when clicking on the badge
         if (e.target.classList.contains('action-badge')) return;
         const index = this.getAttribute('data-index');
         const coin = cards[index];
@@ -287,10 +347,9 @@ async function loadData() {
       });
     });
 
-    // Add click listeners to badges (for action details)
     document.querySelectorAll('#cards .action-badge').forEach(badge => {
       badge.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent triggering card click
+        e.stopPropagation();
         const action = this.getAttribute('data-action');
         const coin = this.getAttribute('data-coin');
         showActionModal(coin, action);
@@ -302,28 +361,20 @@ async function loadData() {
   }
 }
 
-// Modal functions
-const modalOverlay = document.getElementById('modalOverlay');
-const modalContent = document.getElementById('modalContent');
-const modalTitle = document.getElementById('modalTitle');
-const modalBody = document.getElementById('modalBody');
-const modalFooter = document.getElementById('modalFooter');
-const modalClose = document.getElementById('modalClose');
-
 function openModal(title, bodyHtml, footerButtons = '') {
-  modalTitle.textContent = title;
-  modalBody.innerHTML = bodyHtml;
-  modalFooter.innerHTML = footerButtons;
-  modalOverlay.style.display = 'flex';
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalBody').innerHTML = bodyHtml;
+  document.getElementById('modalFooter').innerHTML = footerButtons;
+  document.getElementById('modalOverlay').style.display = 'flex';
 }
 
 function closeModal() {
-  modalOverlay.style.display = 'none';
+  document.getElementById('modalOverlay').style.display = 'none';
 }
 
-modalClose.addEventListener('click', closeModal);
-modalOverlay.addEventListener('click', function(e) {
-  if (e.target === modalOverlay) closeModal();
+document.getElementById('modalClose').addEventListener('click', closeModal);
+document.getElementById('modalOverlay').addEventListener('click', function(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeModal();
 });
 
 function showCoinModal(coin) {
@@ -336,13 +387,9 @@ function showCoinModal(coin) {
       <button class="btn btn-secondary" id="viewChartBtn">View Charts on CoinGecko</button>
     </div>
   `;
-  const footer = `
-    <button class="btn btn-primary" id="modalCloseBtn">Close</button>
-  `;
+  const footer = '<button class="btn btn-primary" id="modalCloseBtn">Close</button>';
   openModal(`${coin.coin} Details`, body, footer);
-  // Add event listener to the close button in the modal
   document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
-  // Add event listener to view chart button
   document.getElementById('viewChartBtn').addEventListener('click', function() {
     window.open(`https://www.coingecko.com/en/coins/${coin.coin.toLowerCase()}`, '_blank');
   });
@@ -358,9 +405,7 @@ function showActionModal(coin, action) {
     </div>
     <p><small>Note: For detailed reasoning, check the latest scan reports in the GitHub repository.</small></p>
   `;
-  const footer = `
-    <button class="btn btn-primary" id="actionModalCloseBtn">Close</button>
-  `;
+  const footer = '<button class="btn btn-primary" id="actionModalCloseBtn">Close</button>';
   openModal(`${coin} - ${action} Details`, body, footer);
   document.getElementById('actionModalCloseBtn').addEventListener('click', closeModal);
   document.getElementById('viewChartBtn').addEventListener('click', function() {
@@ -368,25 +413,19 @@ function showActionModal(coin, action) {
   });
 }
 
-// Initial load
 loadData();
 
-// Polling function to check for updates in data.json
 function pollForUpdates() {
   fetch('data.json', { cache: 'no-store' })
     .then(r => r.json())
     .then(data => {
       if (data.timestamp && data.timestamp !== lastTimestamp) {
-        // Data has been updated, reload the UI
         loadData();
       }
     })
-    .catch(err => {
-      console.warn('Failed to poll for updates:', err);
-    });
+    .catch(err => console.warn('Failed to poll for updates:', err));
 }
 
-// Start polling every 10 seconds
 setInterval(pollForUpdates, 10000);
 </script>
 </body>
