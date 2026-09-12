@@ -11,6 +11,10 @@
     --green: #3fb950; --yellow: #d29922; --red: #f85149;
     --accent: #58a6ff;
     --accent-dark: #4791d6;
+    --green-dark: #2ea043;
+    --yellow-dark: #b08800;
+    --red-dark: #d12a2a;
+    --gray: #6e7681;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -58,6 +62,8 @@
     border-radius: 10px; padding: 14px; margin-bottom: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
   }
   .card:hover {
     background: var(--surface2);
@@ -70,16 +76,37 @@
   .card-header {
     display: flex; justify-content: space-between; align-items: center;
     margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
   }
   .coin-name { font-weight: 700; font-size: 1.05rem; }
   .action-badge {
-    padding: 3px 10px; border-radius: 20px; font-size: 0.75rem;
-    font-weight: 700; text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    color: #fff;
+    white-space: nowrap;
   }
-  .badge-buy { background: var(--green); color: #000; }
+  .action-badge:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .action-badge:active {
+    transform: translateY(0);
+  }
+  .badge-buy { background: var(--green); }
   .badge-watch { background: var(--yellow); color: #000; }
-  .badge-avoid { background: var(--red); color: #fff; }
-  .card-details { color: var(--muted); font-size: 0.85rem; }
+  .badge-sell { background: var(--red); }
+  .badge-avoid { background: var(--red-dark); }
+  .card-details { color: var(--muted); font-size: 0.85rem; margin-top: auto; }
   .card-details li { margin-bottom: 3px; list-style: none; }
   .card-details li::before { content: "· "; color: var(--accent); }
 
@@ -145,13 +172,14 @@
 </div>
 
 <a class="btn btn-primary" id="runBtn">▶ Run Full Scan Now</a>
-<p style="text-align:center;color:var(--muted);fontize:0.75rem;margin-top:-8px">
+<p style="text-align:center;color:var(--muted);font-size:0.75rem;margin-top:-8px">
   Triggers a scan via GitHub Actions (check the Actions tab for progress)
 </p>
 
 <div class="summary-row" id="summaryRow" style="display:none">
   <div class="summary-chip chip-buy" id="buyCount">0<br><small>BUY</small></div>
   <div class="summary-chip chip-watch" id="watchCount">0<br><small>WATCH</small></div>
+  <div class="summary-chip chip-sell" id="sellCount">0<br><small>SELL</small></div>
   <div class="summary-chip chip-avoid" id="avoidCount">0<br><small>AVOID</small></div>
 </div>
 
@@ -196,40 +224,56 @@ async function loadData() {
       'Updated by GitHub Actions · ' + new Date().toLocaleString();
 
     const cards = data.cards || [];
-    let buy=0, watch=0, avoid=0;
+    let buy=0, watch=0, sell=0, avoid=0;
     cards.forEach(c => {
       if (c.action==='BUY') buy++;
       else if (c.action==='WATCH') watch++;
-      else avoid++;
+      else if (c.action==='SELL') sell++;
+      else if (c.action==='AVOID') avoid++;
     });
 
     if (cards.length) {
       document.getElementById('summaryRow').style.display = 'flex';
       document.getElementById('buyCount').innerHTML = buy + '<br><small>BUY</small>';
       document.getElementById('watchCount').innerHTML = watch + '<br><small>WATCH</small>';
+      document.getElementById('sellCount').innerHTML = sell + '<br><small>SELL</small>';
       document.getElementById('avoidCount').innerHTML = avoid + '<br><small>AVOID</small>';
     }
 
     let html = '';
     cards.forEach((c, index) => {
-      const badgeClass = c.action === 'BUY' ? 'badge-buy' : c.action === 'AVOID' ? 'badge-avoid' : 'badge-watch';
+      const badgeClass = c.action === 'BUY' ? 'badge-buy' :
+                        c.action === 'WATCH' ? 'badge-watch' :
+                        c.action === 'SELL' ? 'badge-sell' : 'badge-avoid';
       const details = (c.details||[]).map(d => '<li>' + d + '</li>').join('');
       html += '<div class="card" data-index="' + index + '">' +
         '<div class="card-header">' +
           '<span class="coin-name">' + c.coin + '</span>' +
-          '<span class="action-badge ' + badgeClass + '">' + c.action + '</span>' +
+          '<span class="action-badge ' + badgeClass + '" data-action="' + c.action + '" data-coin="' + c.coin + '">' + c.action + '</span>' +
         '</div>' +
         '<ul class="card-details">' + details + '</ul>' +
       '</div>';
     });
     document.getElementById('cards').innerHTML = html || '<div class="empty">No results</div>';
 
-    // Add click listeners to cards
+    // Add click listeners to cards (for coin details)
     document.querySelectorAll('#cards .card').forEach(card => {
-      card.addEventListener('click', function() {
+      card.addEventListener('click', function(e) {
+        // Prevent triggering when clicking on the badge
+        if (e.target.classList.contains('action-badge')) return;
         const index = this.getAttribute('data-index');
         const coin = cards[index];
         showCoinModal(coin);
+      });
+    });
+
+    // Add click listeners to badges (for action details)
+    document.querySelectorAll('#cards .action-badge').forEach(badge => {
+      badge.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent triggering card click
+        const action = this.getAttribute('data-action');
+        const coin = this.getAttribute('data-coin');
+        showActionModal(coin, action);
       });
     });
 
@@ -266,10 +310,10 @@ function showCoinModal(coin) {
   const detailsList = (coin.details||[]).map(d => '<li>' + d + '</li>').join('');
   const body = `
     <p><strong>Coin:</strong> ${coin.coin}</p>
-    <p><strong>Action:</strong> <span class="action-badge ${coin.action === 'BUY' ? 'badge-buy' : coin.action === 'AVOID' ? 'badge-avoid' : 'badge-watch'}">${coin.action}</span></p>
+    <p><strong>Action:</strong> <span class="action-badge ${coin.action === 'BUY' ? 'badge-buy' : coin.action === 'WATCH' ? 'badge-watch' : coin.action === 'SELL' ? 'badge-sell' : 'badge-avoid'}">${coin.action}</span></p>
     <ul class="card-details">${detailsList}</ul>
     <div class="coin-chart-placeholder">
-      Charts (15m, 1h, 4h, 1week) coming soon
+      <button class="btn btn-secondary" id="viewChartBtn">View Charts on CoinGecko</button>
     </div>
   `;
   const footer = `
@@ -278,8 +322,39 @@ function showCoinModal(coin) {
   openModal(`${coin.coin} Details`, body, footer);
   // Add event listener to the close button in the modal
   document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+  // Add event listener to view chart button
+  document.getElementById('viewChartBtn').addEventListener('click', function() {
+    window.open(`https://www.coingecko.com/en/coins/${coin.coin.toLowerCase()}`, '_blank');
+  });
 }
 
+function showActionModal(coin, action) {
+  const body = `
+    <p><strong>Coin:</strong> ${coin}</p>
+    <p><strong>Action:</strong> <span class="action-badge ${action === 'BUY' ? 'badge-buy' : action === 'WATCH' ? 'badge-watch' : action === 'SELL' ? 'badge-sell' : 'badge-avoid'}">${action}</span></p>
+    <p>This action was generated by the crypto agent pipeline based on technical analysis, sentiment, and on-chain data.</p>
+    <div class="coin-chart-placeholder">
+      <button class="btn btn-secondary" id="viewChartBtn">View Charts on CoinGecko</button>
+    </div>
+    <p><small>Note: For detailed reasoning, check the latest scan reports in the GitHub repository.</small></p>
+  `;
+  const footer = `
+    <button class="btn btn-primary" id="actionModalCloseBtn">Close</button>
+  `;
+  openModal(`${coin} - ${action} Details`, body, footer);
+  document.getElementById('actionModalCloseBtn').addEventListener('click', closeModal);
+  document.getElementById('viewChartBtn').addEventListener('click', function() {
+    window.open(`https://www.coingecko.com/en/coins/${coin.toLowerCase()}`, '_blank');
+  });
+}
+
+// Scan button click handler
+document.getElementById('runBtn').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent navigation
+  showScanModal();
+});
+
+// Scan modal function
 function showScanModal() {
   const body = `
     <p>The scan has been triggered via GitHub Actions.</p>
@@ -292,12 +367,6 @@ function showScanModal() {
   openModal('Scan Triggered', body, footer);
   document.getElementById('scanModalCloseBtn').addEventListener('click', closeModal);
 }
-
-// Scan button click handler
-document.getElementById('runBtn').addEventListener('click', function(e) {
-  e.preventDefault(); // Prevent navigation
-  showScanModal();
-});
 
 // Initial load
 loadData();
