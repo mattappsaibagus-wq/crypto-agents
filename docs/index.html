@@ -55,7 +55,8 @@
   }
   .chip-buy { background: rgba(63,185,80,0.15); color: var(--green); }
   .chip-watch { background: rgba(210,153,34,0.15); color: var(--yellow); }
-  .chip-avoid { background: rgba(248,81,73,0.15); color: var(--red); }
+  .chip-sell { background: rgba(248,81,73,0.15); color: var(--red); }
+  .chip-avoid { background: rgba(248,81,73,0.15); color: var(--red-dark); }
 
   .card {
     background: var(--surface); border: 1px solid var(--border);
@@ -167,13 +168,13 @@
 </header>
 
 <div class="status-bar">
-  <span>🤖 Auto-scan every 6h on GitHub</span>
+  <span>📊 Data updates automatically after scans</span>
   <span id="signalCount"></span>
 </div>
 
-<a class="btn btn-primary" id="runBtn">▶ Run Full Scan Now</a>
+<a class="btn btn-primary" id="runBtn" href="#" target="_blank" rel="noopener">▶ Run Full Scan Now</a>
 <p style="text-align:center;color:var(--muted);font-size:0.75rem;margin-top:-8px">
-  Triggers a scan via GitHub Actions (check the Actions tab for progress)
+  Opens GitHub Actions to trigger a new scan
 </p>
 
 <div class="summary-row" id="summaryRow" style="display:none">
@@ -187,7 +188,7 @@
 
 <div class="updated" id="updated"></div>
 
-<!-- Modal Overlay -->
+<!-- Modal Overlay (kept for coin and action modals) -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-content" id="modalContent">
     <div class="modal-header">
@@ -204,6 +205,9 @@
 </div>
 
 <script>
+let lastTimestamp = null;
+
+// Async function to load data from data.json
 async function loadData() {
   try {
     const r = await fetch('data.json', { cache: 'no-store' });
@@ -212,13 +216,19 @@ async function loadData() {
     if (data.timestamp) {
       document.getElementById('lastRun').textContent =
         'Last scan: ' + new Date(data.timestamp).toLocaleString();
+      // Update lastTimestamp for polling comparison
+      lastTimestamp = data.timestamp;
     }
 
-    // Trigger button → GitHub Actions workflow dispatch (opens in same tab)
+    // Set the button href to workflow_url (if available)
     const runBtn = document.getElementById('runBtn');
-    runBtn.href = data.workflow_url || '#';
-    runBtn.target = '_self'; // Open in same tab
-    runBtn.removeAttribute('rel'); // Remove noopener if not needed
+    if (data.workflow_url) {
+      runBtn.href = data.workflow_url;
+    } else {
+      runBtn.href = '#'; // fallback
+    }
+    // Keep target="_blank" and rel="noopener" as set in HTML
+
     document.getElementById('signalCount').textContent = data.signals + ' signals';
     document.getElementById('updated').textContent =
       'Updated by GitHub Actions · ' + new Date().toLocaleString();
@@ -348,28 +358,26 @@ function showActionModal(coin, action) {
   });
 }
 
-// Scan button click handler
-document.getElementById('runBtn').addEventListener('click', function(e) {
-  e.preventDefault(); // Prevent navigation
-  showScanModal();
-});
-
-// Scan modal function
-function showScanModal() {
-  const body = `
-    <p>The scan has been triggered via GitHub Actions.</p>
-    <p>Check the <a href="https://github.com/mattappsaibagus-wq/crypto-agents/actions" target="_blank" rel="noopener">Actions tab</a> for progress and results.</p>
-    <p>Once the scan completes, the data will update automatically.</p>
-  `;
-  const footer = `
-    <button class="btn btn-primary" id="scanModalCloseBtn">OK</button>
-  `;
-  openModal('Scan Triggered', body, footer);
-  document.getElementById('scanModalCloseBtn').addEventListener('click', closeModal);
-}
-
 // Initial load
 loadData();
+
+// Polling function to check for updates in data.json
+function pollForUpdates() {
+  fetch('data.json', { cache: 'no-store' })
+    .then(r => r.json())
+    .then(data => {
+      if (data.timestamp && data.timestamp !== lastTimestamp) {
+        // Data has been updated, reload the UI
+        loadData();
+      }
+    })
+    .catch(err => {
+      console.warn('Failed to poll for updates:', err);
+    });
+}
+
+// Start polling every 10 seconds
+setInterval(pollForUpdates, 10000);
 </script>
 </body>
 </html>
