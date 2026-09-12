@@ -1,16 +1,6 @@
 {
-  "timestamp": "2026-09-12T13:21:58",
+  "timestamp": "2026-09-12T13:36:43",
   "cards": [
-    {
-      "coin": "STORJ",
-      "action": "BUY",
-      "details": [
-        "**Score:** 0.171",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +33.2%; volume 3.0x normal; momentum + volume confirmed"
-      ]
-    },
     {
       "coin": "STONK",
       "action": "BUY",
@@ -22,30 +12,12 @@
       ]
     },
     {
-      "coin": "LAPTOP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "USELESS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "LSK",
+      "coin": "STORJ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.141",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +79.8%; volume 2.5x normal; momentum + volume confirmed"
+        "**Why:** 24h +32.1%; volume 3.0x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -58,16 +30,43 @@
       ]
     },
     {
-      "coin": "FLOCK",
+      "coin": "LAPTOP",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.097",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +18.4%; volume 2.1x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "PONS",
+      "coin": "NEAR",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PENGU",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "USELESS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -77,7 +76,7 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "PONS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -97,27 +96,7 @@
       ]
     },
     {
-      "coin": "NEAR",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "CASHCAT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -147,7 +126,7 @@
       ]
     },
     {
-      "coin": "VVV",
+      "coin": "LAB",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -157,7 +136,7 @@
       ]
     },
     {
-      "coin": "VET",
+      "coin": "HYPE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -172,10 +151,10 @@
       "details": [
         "**Score:** 0.016",
         "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h -34.8%; volume 2.8x normal; real liquidity"
+        "**Why:** trending on CoinGecko right now; 24h -27.7%; volume 2.8x normal; real liquidity"
       ]
     }
   ],
-  "signals": 27,
+  "signals": 25,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
