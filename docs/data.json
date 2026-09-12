@@ -1,22 +1,23 @@
 {
-  "timestamp": "2026-09-12T13:50:17",
+  "timestamp": "2026-09-12T13:53:15",
   "cards": [
     {
-      "coin": "FLOCK",
+      "coin": "AI",
+      "action": "BUY",
+      "details": [
+        "**Score:** 0.167",
+        "**Signals:** 1 | **DD score:** 0.6",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "STORJ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.141",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +20.7%; volume 2.2x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "AI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +40.2%; volume 2.2x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -56,21 +57,11 @@
       ]
     },
     {
-      "coin": "STORJ",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.097",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +39.3%; volume 2.5x normal; momentum + volume confirmed"
-      ]
-    },
-    {
       "coin": "USELESS",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -162,10 +153,10 @@
       "details": [
         "**Score:** 0.016",
         "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h -38.5%; volume 2.7x normal; real liquidity"
+        "**Why:** trending on CoinGecko right now; 24h -36.0%; volume 2.7x normal; real liquidity"
       ]
     }
   ],
-  "signals": 26,
+  "signals": 25,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
