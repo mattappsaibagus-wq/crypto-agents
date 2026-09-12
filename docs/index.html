@@ -400,6 +400,16 @@ function showCoinModal(coin) {
     <p><strong>Coin:</strong> ${coin.coin}</p>
     <p><strong>Action:</strong> <span class="action-badge ${coin.action === 'BUY' ? 'badge-buy' : coin.action === 'WATCH' ? 'badge-watch' : coin.action === 'SELL' ? 'badge-sell' : 'badge-avoid'}">${coin.action}</span></p>
     <ul class="card-details">${detailsList}</ul>
+    <div id="coinStats" style="display:flex;gap:12px;margin:12px 0;text-align:center;">
+      <div style="flex:1;background:var(--surface2);border-radius:8px;padding:8px;">
+        <div style="font-size:0.7rem;color:var(--muted);">24h HIGH</div>
+        <div id="high24h" style="font-weight:700;color:var(--green);">--</div>
+      </div>
+      <div style="flex:1;background:var(--surface2);border-radius:8px;padding:8px;">
+        <div style="font-size:0.7rem;color:var(--muted);">24h LOW</div>
+        <div id="low24h" style="font-weight:700;color:var(--red);">--</div>
+      </div>
+    </div>
     <div class="coin-chart-container">
       <canvas id="coinChart"></canvas>
       <div id="chartLoading" style="text-align:center;color:var(--muted);padding:20px;">Loading chart...</div>
@@ -410,6 +420,7 @@ function showCoinModal(coin) {
   openModal(`${coin.coin} Details`, body, footer);
   document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
   loadCoinChart(coin.coin);
+  loadCoinStats(coin.coin);
 }
 
 function showActionModal(coin, action) {
@@ -471,6 +482,19 @@ function loadCoinChart(coin) {
       console.warn('Failed to load chart data:', err);
       document.getElementById('chartLoading').innerHTML = 'Chart unavailable';
     });
+}
+
+// Load 24h high/low stats from CoinGecko
+function loadCoinStats(coin) {
+  fetch(`https://api.coingecko.com/api/v3/coins/${coin.toLowerCase()}`)
+    .then(r => r.json())
+    .then(data => {
+      const high = data.market_data.high_24h.usd;
+      const low = data.market_data.low_24h.usd;
+      if (high) document.getElementById('high24h').textContent = '$' + high.toLocaleString();
+      if (low) document.getElementById('low24h').textContent = '$' + low.toLocaleString();
+    })
+    .catch(err => console.warn('Failed to load coin stats:', err));
 }
 
 document.getElementById('runBtn').addEventListener('click', async function(e) {
