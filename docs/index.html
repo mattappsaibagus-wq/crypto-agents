@@ -596,17 +596,30 @@ function loadCoinChart(coin, timeframe = '24h') {
     });
 }
 
-// Load 24h high/low stats from CoinGecko
+// Load 24h high/low stats from CoinGecko price data
 function loadCoinStats(coin) {
-  fetch(`https://api.coingecko.com/api/v3/coins/${coin.toLowerCase()}`)
+  fetch(`https://api.coingecko.com/api/v3/coins/${coin.toLowerCase()}/market_chart?vs_currency=usd&days=1&interval=hourly`)
     .then(r => r.json())
     .then(data => {
-      const high = data.market_data.high_24h.usd;
-      const low = data.market_data.low_24h.usd;
-      if (high) document.getElementById('high24h').textContent = '$' + high.toLocaleString();
-      if (low) document.getElementById('low24h').textContent = '$' + low.toLocaleString();
+      const prices = data.prices || [];
+      if (!prices.length) {
+        throw new Error('No price data');
+      }
+      const priceValues = prices.map(p => p[1]);
+      const high = Math.max(...priceValues);
+      const low = Math.min(...priceValues);
+      const highEl = document.getElementById('high24h');
+      const lowEl = document.getElementById('low24h');
+      if (highEl) highEl.textContent = '$' + high.toLocaleString(undefined, {minimumFractionDigits: 4, maximumFractionDigits: 8});
+      if (lowEl) lowEl.textContent = '$' + low.toLocaleString(undefined, {minimumFractionDigits: 4, maximumFractionDigits: 8});
     })
-    .catch(err => console.warn('Failed to load coin stats:', err));
+    .catch(err => {
+      console.warn('Failed to load coin stats:', err);
+      const highEl = document.getElementById('high24h');
+      const lowEl = document.getElementById('low24h');
+      if (highEl) highEl.textContent = 'N/A';
+      if (lowEl) lowEl.textContent = 'N/A';
+    });
 }
 
 document.getElementById('runBtn').addEventListener('click', async function(e) {
