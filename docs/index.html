@@ -247,10 +247,10 @@
   <span id="signalCount"></span>
 </div>
 
-<a class="btn btn-primary" id="runBtn" href="#" target="_blank" rel="noopener">▶ Run Full Scan Now</a>
-<p style="text-align:center;color:var(--muted);font-size:0.75rem;margin-top:-8px">
-  Opens GitHub Actions to trigger a new scan
-</p>
+<button class="btn btn-primary" id="runBtn" disabled>▶ Run Full Scan Now</button>
+<div id="scanStatus" style="text-align:center;color:var(--muted);font-size:0.75rem;margin-top:4px;">
+  Ready to scan — click to start
+</div>
 
 <div class="summary-row" id="summaryRow" style="display:none">
   <div class="summary-chip chip-buy" id="buyCount">0<br><small>BUY</small></div>
@@ -295,6 +295,7 @@ async function loadData() {
     }
 
     const runBtn = document.getElementById('runBtn');
+    runBtn.disabled = false;
     if (data.workflow_url) {
       runBtn.href = data.workflow_url;
     } else {
@@ -412,6 +413,29 @@ function showActionModal(coin, action) {
     window.open(`https://www.coingecko.com/en/coins/${coin.toLowerCase()}`, '_blank');
   });
 }
+
+document.getElementById('runBtn').addEventListener('click', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('runBtn');
+  const statusEl = document.getElementById('scanStatus');
+  if (btn.disabled) return;
+  btn.disabled = true;
+  btn.textContent = '⏳ Triggering scan...';
+  statusEl.textContent = 'Connecting to GitHub Actions...';
+  try {
+    const res = await fetch('/api/trigger-scan', { method: 'POST' });
+    const data = await res.json();
+    if (data.success) {
+      statusEl.textContent = 'Scan triggered! Results will appear when the pipeline completes.';
+    } else {
+      statusEl.textContent = 'Scan trigger failed: ' + (data.error || 'Unknown error') + '. Retrying will show latest results.';
+    }
+  } catch (err) {
+    statusEl.textContent = 'Scan trigger error: ' + err.message + '. Retrying will show latest results.';
+  }
+  btn.textContent = '▶ Run Full Scan Now';
+  btn.disabled = false;
+});
 
 loadData();
 

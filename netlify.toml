@@ -1,0 +1,7 @@
+[build]
+  publish = "docs"
+
+[[redirects]]
+  from = "/api/trigger-scan"
+  to = "/.netlify/functions/trigger-scan"
+  status = 200
