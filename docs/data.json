@@ -1,27 +1,26 @@
 {
-  "timestamp": "2026-09-12T13:36:43",
+  "timestamp": "2026-09-12T13:50:17",
   "cards": [
     {
-      "coin": "STONK",
-      "action": "BUY",
-      "details": [
-        "**Score:** 0.167",
-        "**Signals:** 1 | **DD score:** 0.6",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "STORJ",
+      "coin": "FLOCK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.141",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +32.1%; volume 3.0x normal; momentum + volume confirmed"
+        "**Why:** 24h +20.7%; volume 2.2x normal; momentum + volume confirmed"
       ]
     },
     {
       "coin": "AI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "STONK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -48,25 +47,25 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "PONS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
         "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "STORJ",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.097",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +39.3%; volume 2.5x normal; momentum + volume confirmed"
       ]
     },
     {
       "coin": "USELESS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -76,11 +75,12 @@
       ]
     },
     {
-      "coin": "PONS",
+      "coin": "SOL",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "coin": "CASHCAT",
+      "coin": "VVV",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -116,7 +116,18 @@
       ]
     },
     {
-      "coin": "MET",
+      "coin": "ETH",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZEC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -126,7 +137,7 @@
       ]
     },
     {
-      "coin": "LAB",
+      "coin": "LSK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -136,7 +147,7 @@
       ]
     },
     {
-      "coin": "HYPE",
+      "coin": "NOCK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -151,10 +162,10 @@
       "details": [
         "**Score:** 0.016",
         "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h -27.7%; volume 2.8x normal; real liquidity"
+        "**Why:** trending on CoinGecko right now; 24h -38.5%; volume 2.7x normal; real liquidity"
       ]
     }
   ],
-  "signals": 25,
+  "signals": 26,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
