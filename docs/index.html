@@ -15,6 +15,7 @@
     --yellow-dark: #b08800;
     --red-dark: #d12a2a;
     --gray: #6e7681;
+    --live: #3fb950;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -46,6 +47,15 @@
     display: flex; justify-content: space-between; align-items: center;
     padding: 10px 14px; background: var(--surface); border-radius: 8px;
     margin-bottom: 16px; font-size: 0.82rem; color: var(--muted);
+  }
+  .live-indicator {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 0.75rem;
+  }
+  .live-indicator::before {
+    content: "●";
+    color: var(--live);
+    font-size: 0.875rem;
   }
 
   .summary-row { display: flex; gap: 8px; margin-bottom: 16px; }
@@ -168,7 +178,7 @@
 </header>
 
 <div class="status-bar">
-  <span>📊 Data updates automatically after scans</span>
+  <span class="live-indicator">Live</span>
   <span id="signalCount"></span>
 </div>
 
