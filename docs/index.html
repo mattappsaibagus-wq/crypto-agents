@@ -10,6 +10,7 @@
     --border: #30363d; --text: #e6edf3; --muted: #8b949e;
     --green: #3fb950; --yellow: #d29922; --red: #f85149;
     --accent: #58a6ff;
+    --accent-dark: #4791d6;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -26,9 +27,15 @@
     display: block; width: 100%; padding: 14px; border: none; border-radius: 10px;
     font-size: 1rem; font-weight: 600; cursor: pointer;
     margin: 12px 0; text-align: center; text-decoration: none;
+    transition: all 0.2s ease;
+    border: none;
+    background: var(--accent);
+    color: #000;
+    font-family: inherit;
   }
   .btn-primary { background: var(--accent); color: #000; }
-  .btn-primary:hover { opacity: 0.9; }
+  .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+  .btn-primary:active { transform: translateY(0); }
   .btn-secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
 
   .status-bar {
@@ -49,6 +56,16 @@
   .card {
     background: var(--surface); border: 1px solid var(--border);
     border-radius: 10px; padding: 14px; margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .card:hover {
+    background: var(--surface2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .card:active {
+    transform: translateY(0);
   }
   .card-header {
     display: flex; justify-content: space-between; align-items: center;
@@ -68,6 +85,51 @@
 
   .empty { text-align: center; padding: 40px 20px; color: var(--muted); }
   .updated { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 8px; }
+
+  /* Modal styles */
+  .modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7); display: none; align-items: center;
+    justify-content: center; z-index: 1000;
+  }
+  .modal-content {
+    background: var(--surface); border-radius: 12px;
+    max-width: 90%; width: 400px; max-height: 80vh;
+    overflow-y: auto; position: relative;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    animation: modalFadeIn 0.3s ease;
+  }
+  @keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .modal-header {
+    padding: 16px 20px; border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .modal-header h2 {
+    margin: 0; font-size: 1.25rem; font-weight: 600;
+    color: var(--text);
+  }
+  .modal-close {
+    background: none; border: none; font-size: 1.5rem;
+    line-height: 1; color: var(--muted); cursor: pointer;
+    padding: 4px 8px; border-radius: 4px;
+  }
+  .modal-close:hover { color: var(--text); background: var(--surface2); }
+  .modal-body { padding: 20px; }
+  .modal-footer { padding: 16px 20px; text-align: right;
+    border-top: 1px solid var(--border); }
+  .modal-footer .btn {
+    width: auto; margin: 0; margin-left: 8px;
+  }
+  .coin-chart-placeholder {
+    width: 100%; height: 200px; background: var(--surface2);
+    border-radius: 8px; margin: 16px 0;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-size: 0.9rem;
+  }
 </style>
 </head>
 <body>
@@ -82,9 +144,9 @@
   <span id="signalCount"></span>
 </div>
 
-<a class="btn btn-primary" id="runBtn" href="#" target="_blank" rel="noopener">▶ Run Full Scan Now</a>
-<p style="text-align:center;color:var(--muted);font-size:0.75rem;margin-top:-8px">
-  Opens GitHub Actions — pick "Run workflow" to scan on demand
+<a class="btn btn-primary" id="runBtn">▶ Run Full Scan Now</a>
+<p style="text-align:center;color:var(--muted);fontize:0.75rem;margin-top:-8px">
+  Triggers a scan via GitHub Actions (check the Actions tab for progress)
 </p>
 
 <div class="summary-row" id="summaryRow" style="display:none">
@@ -97,6 +159,22 @@
 
 <div class="updated" id="updated"></div>
 
+<!-- Modal Overlay -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-content" id="modalContent">
+    <div class="modal-header">
+      <h2 id="modalTitle">Modal Title</h2>
+      <button class="modal-close" id="modalClose">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody">
+      Modal body content
+    </div>
+    <div class="modal-footer" id="modalFooter">
+      <!-- Buttons will be inserted here -->
+    </div>
+  </div>
+</div>
+
 <script>
 async function loadData() {
   try {
@@ -108,10 +186,11 @@ async function loadData() {
         'Last scan: ' + new Date(data.timestamp).toLocaleString();
     }
 
-    // Trigger button → GitHub Actions workflow dispatch
-    if (data.workflow_url) {
-      document.getElementById('runBtn').href = data.workflow_url;
-    }
+    // Trigger button → GitHub Actions workflow dispatch (opens in same tab)
+    const runBtn = document.getElementById('runBtn');
+    runBtn.href = data.workflow_url || '#';
+    runBtn.target = '_self'; // Open in same tab
+    runBtn.removeAttribute('rel'); // Remove noopener if not needed
     document.getElementById('signalCount').textContent = data.signals + ' signals';
     document.getElementById('updated').textContent =
       'Updated by GitHub Actions · ' + new Date().toLocaleString();
@@ -132,10 +211,10 @@ async function loadData() {
     }
 
     let html = '';
-    cards.forEach(c => {
+    cards.forEach((c, index) => {
       const badgeClass = c.action === 'BUY' ? 'badge-buy' : c.action === 'AVOID' ? 'badge-avoid' : 'badge-watch';
       const details = (c.details||[]).map(d => '<li>' + d + '</li>').join('');
-      html += '<div class="card">' +
+      html += '<div class="card" data-index="' + index + '">' +
         '<div class="card-header">' +
           '<span class="coin-name">' + c.coin + '</span>' +
           '<span class="action-badge ' + badgeClass + '">' + c.action + '</span>' +
@@ -144,10 +223,83 @@ async function loadData() {
       '</div>';
     });
     document.getElementById('cards').innerHTML = html || '<div class="empty">No results</div>';
+
+    // Add click listeners to cards
+    document.querySelectorAll('#cards .card').forEach(card => {
+      card.addEventListener('click', function() {
+        const index = this.getAttribute('data-index');
+        const coin = cards[index];
+        showCoinModal(coin);
+      });
+    });
+
   } catch(e) {
     document.getElementById('cards').innerHTML = '<div class="empty">Failed to load report</div>';
   }
 }
+
+// Modal functions
+const modalOverlay = document.getElementById('modalOverlay');
+const modalContent = document.getElementById('modalContent');
+const modalTitle = document.getElementById('modalTitle');
+const modalBody = document.getElementById('modalBody');
+const modalFooter = document.getElementById('modalFooter');
+const modalClose = document.getElementById('modalClose');
+
+function openModal(title, bodyHtml, footerButtons = '') {
+  modalTitle.textContent = title;
+  modalBody.innerHTML = bodyHtml;
+  modalFooter.innerHTML = footerButtons;
+  modalOverlay.style.display = 'flex';
+}
+
+function closeModal() {
+  modalOverlay.style.display = 'none';
+}
+
+modalClose.addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', function(e) {
+  if (e.target === modalOverlay) closeModal();
+});
+
+function showCoinModal(coin) {
+  const detailsList = (coin.details||[]).map(d => '<li>' + d + '</li>').join('');
+  const body = `
+    <p><strong>Coin:</strong> ${coin.coin}</p>
+    <p><strong>Action:</strong> <span class="action-badge ${coin.action === 'BUY' ? 'badge-buy' : coin.action === 'AVOID' ? 'badge-avoid' : 'badge-watch'}">${coin.action}</span></p>
+    <ul class="card-details">${detailsList}</ul>
+    <div class="coin-chart-placeholder">
+      Charts (15m, 1h, 4h, 1week) coming soon
+    </div>
+  `;
+  const footer = `
+    <button class="btn btn-primary" id="modalCloseBtn">Close</button>
+  `;
+  openModal(`${coin.coin} Details`, body, footer);
+  // Add event listener to the close button in the modal
+  document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+}
+
+function showScanModal() {
+  const body = `
+    <p>The scan has been triggered via GitHub Actions.</p>
+    <p>Check the <a href="https://github.com/mattappsaibagus-wq/crypto-agents/actions" target="_blank" rel="noopener">Actions tab</a> for progress and results.</p>
+    <p>Once the scan completes, the data will update automatically.</p>
+  `;
+  const footer = `
+    <button class="btn btn-primary" id="scanModalCloseBtn">OK</button>
+  `;
+  openModal('Scan Triggered', body, footer);
+  document.getElementById('scanModalCloseBtn').addEventListener('click', closeModal);
+}
+
+// Scan button click handler
+document.getElementById('runBtn').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent navigation
+  showScanModal();
+});
+
+// Initial load
 loadData();
 </script>
 </body>
