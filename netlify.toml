@@ -5,3 +5,8 @@
   from = "/api/trigger-scan"
   to = "/.netlify/functions/trigger-scan"
   status = 200
+
+[[redirects]]
+  from = "/api/run"
+  to = "/.netlify/functions/trigger-scan"
+  status = 200
