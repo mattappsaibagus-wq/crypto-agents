@@ -1,21 +1,22 @@
 {
-  "timestamp": "2026-09-12T15:19:13",
+  "timestamp": "2026-09-13T02:14:11",
   "cards": [
     {
-      "coin": "STORJ",
-      "action": "WATCH",
+      "coin": "STONK",
+      "action": "BUY",
       "details": [
-        "**Score:** 0.141",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +53.2%; volume 2.7x normal; momentum + volume confirmed"
+        "**Score:** 0.167",
+        "**Signals:** 1 | **DD score:** 0.6",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "PONS",
+      "coin": "EMBER",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
+        "**Score:** 0.147",
+        "**Signals:** 1 | **DD score:** 0.45",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -29,43 +30,52 @@
       ]
     },
     {
+      "coin": "PONS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PENGU",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "STORJ",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "REZ",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.097",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +23.6%; volume 2.9x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "FLOCK",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.097",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +38.7%; volume 2.6x normal; momentum + volume confirmed"
+      ]
+    },
+    {
       "coin": "LAPTOP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "STONK",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ETHFI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "SOPH",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.083",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 3.1x normal; momentum + volume confirmed; real liquidity"
-      ]
-    },
-    {
-      "coin": "HYPE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -75,7 +85,7 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "HYPE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -95,7 +105,7 @@
       ]
     },
     {
-      "coin": "LIT",
+      "coin": "ZZZ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -105,39 +115,7 @@
       ]
     },
     {
-      "coin": "SOL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ETH",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "USELESS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "XMR",
+      "coin": "PUMP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -157,15 +135,38 @@
       ]
     },
     {
-      "coin": "EMBER",
+      "coin": "BTC",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.016",
-        "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h -45.5%; volume 2.6x normal; real liquidity"
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SOL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZEC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
       ]
     }
   ],
-  "signals": 26,
-  "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
+  "signals": 25,
+  "workflow_url": ""
 }
