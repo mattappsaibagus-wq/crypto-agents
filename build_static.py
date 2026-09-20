@@ -79,7 +79,7 @@ def _parse_details(lines):
     return fields, cleaned
 
 
-def parse_report_cards(md):
+def parse_report_cards(md, signals=None):
     """Convert the markdown report into structured card objects for the frontend."""
     cards = []
     current = None
@@ -114,6 +114,21 @@ def parse_report_cards(md):
         if "size" in fields:
             card["size"] = fields["size"]
         card["details"] = details
+    # Attach the CoinGecko id from signals.json so the dashboard can fetch
+    # charts/stats with the correct id (tickers alone 404 on CoinGecko).
+    if signals:
+        ticker_to_id = {}
+        for sig in signals:
+            if not isinstance(sig, dict):
+                continue
+            sym = str(sig.get("coin") or "").upper()
+            cid = (sig.get("details") or {}).get("coin_id")
+            if sym and cid and sym not in ticker_to_id:
+                ticker_to_id[sym] = cid
+        for card in cards:
+            sym = str(card.get("coin") or "").upper()
+            if sym in ticker_to_id:
+                card["coin_id"] = ticker_to_id[sym]
     return cards
 
 
