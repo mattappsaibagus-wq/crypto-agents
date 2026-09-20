@@ -586,17 +586,6 @@ function loadCoinChart(coin, timeframe = '24h') {
       document.getElementById('chartLoading').innerHTML = 'Chart data unavailable';
     });
 }
-      };
-
-      document.getElementById('chartLoading').style.display = 'none';
-      window.myCoinChart = new Chart(ctx, chartConfig);
-    })
-    .catch(err => {
-      console.warn('Failed to load chart data:', err);
-      document.getElementById('chartLoading').innerHTML = 'Chart unavailable';
-    });
-}
-
 // Load 24h high/low stats from CoinGecko price data
 function loadCoinStats(coin) {
   fetch(`https://api.coingecko.com/api/v3/coins/${coin.toLowerCase()}/market_chart?vs_currency=usd&days=1&interval=hourly`)
