@@ -22,6 +22,63 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "data", "signals.json")
 DOCS_DIR = os.path.join(BASE_DIR, "docs")
 
 
+import re
+
+
+def _clean_md(text):
+    """Strip markdown emphasis (**...**) from a string."""
+    return re.sub(r"\*\*([^*]*)\*\*", r"\1", text).strip()
+
+
+def _parse_details(lines):
+    """Extract structured fields from report detail lines, return (fields, cleaned).
+
+        Recognised lines:
+      Score: 0.167 | Signals: 1 | DD score: 0.6
+      Suggested size: up to 1.0% of portfolio
+      Why: ...
+    """
+    fields = {}
+    cleaned = []
+    for line in lines:
+        text = _clean_md(line)
+        if not text:
+            continue
+        # A single bullet may carry several pipe-separated fields, e.g.
+        # "Score: 0.167 | Signals: 1 | DD score: 0.6". Parse each segment.
+        segments = [s.strip() for s in text.split("|")]
+        matched_any = False
+        for seg in segments:
+            m = re.match(r"Score:\s*([+-]?[\d.]+)", seg)
+            if m:
+                fields["score"] = float(m.group(1))
+                matched_any = True
+                continue
+            m = re.match(r"Signals:\s*(\d+)", seg)
+            if m:
+                fields["signals"] = int(m.group(1))
+                matched_any = True
+                continue
+            m = re.match(r"DD score:\s*([+-]?[\d.]+)", seg)
+            if m:
+                fields["dd"] = float(m.group(1))
+                matched_any = True
+                continue
+            m = re.match(r"Suggested size:\s*(.+)", seg)
+            if m:
+                fields["size"] = m.group(1).strip()
+                matched_any = True
+                continue
+            m = re.match(r"Why:\s*(.+)", seg)
+            if m:
+                cleaned.append(m.group(1).strip())
+                matched_any = True
+                continue
+        if not matched_any:
+            cleaned.append(text)
+    return fields, cleaned
+
+
 def parse_report_cards(md):
     """Convert the markdown report into structured card objects for the frontend."""
     cards = []
@@ -44,6 +101,19 @@ def parse_report_cards(md):
             current["details"].append(line[2:].strip())
     if current:
         cards.append(current)
+
+    # Parse markdown detail lines into structured fields so the dashboard
+    # gets numeric score / signals / dd values and clean prose details.
+    for card in cards:
+        fields, details = _parse_details(card.pop("details"))
+        card["score"] = fields.get("score", 0.0)
+        if "signals" in fields:
+            card["signals"] = fields["signals"]
+        if "dd" in fields:
+            card["dd"] = fields["dd"]
+        if "size" in fields:
+            card["size"] = fields["size"]
+        card["details"] = details
     return cards
 
 
