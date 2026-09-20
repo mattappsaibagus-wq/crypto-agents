@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-20T12:29:34",
+  "timestamp": "2026-09-20T12:48:58",
   "cards": [
     {
       "coin": "AKE",
@@ -18,7 +18,7 @@
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "24h +75.4%; volume 4.6x normal; momentum + volume confirmed"
+        "24h +73.3%; volume 4.6x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -28,7 +28,7 @@
       "signals": 2,
       "dd": 0.1,
       "details": [
-        "trending on CoinGecko right now; 24h +65.4%; volume 3.4x normal; momentum + volume confirmed"
+        "trending on CoinGecko right now; 24h +62.5%; volume 3.5x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -48,7 +48,7 @@
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "volume 11.9x normal; momentum + volume confirmed; real liquidity"
+        "volume 10.5x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
@@ -92,36 +92,6 @@
       ]
     },
     {
-      "coin": "BP",
-      "action": "WATCH",
-      "score": 0.077,
-      "signals": 1,
-      "details": [
-        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZAMA",
-      "action": "WATCH",
-      "score": 0.077,
-      "signals": 1,
-      "details": [
-        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "FET",
-      "action": "WATCH",
-      "score": 0.077,
-      "signals": 1,
-      "details": [
-        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "AVAX",
       "action": "WATCH",
       "score": 0.077,
@@ -133,7 +103,7 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "ZAMA",
       "action": "WATCH",
       "score": 0.077,
       "signals": 1,
@@ -153,6 +123,36 @@
       ]
     },
     {
+      "coin": "PENGU",
+      "action": "WATCH",
+      "score": 0.077,
+      "signals": 1,
+      "details": [
+        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "BP",
+      "action": "WATCH",
+      "score": 0.077,
+      "signals": 1,
+      "details": [
+        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "FET",
+      "action": "WATCH",
+      "score": 0.077,
+      "signals": 1,
+      "details": [
+        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "trending on CoinGecko right now"
+      ]
+    },
+    {
       "coin": "NEAR",
       "action": "WATCH",
       "score": 0.077,
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "coin": "LIT",
+      "coin": "VVV",
       "action": "WATCH",
       "score": 0.077,
       "signals": 1,
@@ -173,12 +173,12 @@
       ]
     },
     {
-      "coin": "BTC",
+      "coin": "SOL",
       "action": "WATCH",
       "score": 0.077,
       "signals": 1,
       "details": [
-        "Status: already in your holdings",
+        "Status: on your watchlist",
         "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "trending on CoinGecko right now"
       ]
@@ -200,7 +200,7 @@
       "signals": 1,
       "details": [
         "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "24h -41.0%; volume 2.8x normal; real liquidity"
+        "24h -39.9%; volume 2.6x normal; real liquidity"
       ]
     },
     {
@@ -210,7 +210,7 @@
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "24h -18.4%; volume 7.1x normal; real liquidity"
+        "24h -20.3%; volume 7.1x normal; real liquidity"
       ]
     }
   ],
