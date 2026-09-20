@@ -37,3 +37,5 @@ CoinGecko `/api/v3/`, CoinPaprika, DEXScreener.
 ---
 
 *Personal research tool only — not financial advice.*
+
+<!-- redeploy trigger 2026-09-20 -->
