@@ -718,7 +718,7 @@ function renderCards(cards) {
         '<span>' + ddInfo + '</span>' +
       '</div>' +
       '<div class="coin-reasons">' +
-        (c.details && c.details.length ? c.details[0] : 'No details') +
+        (c.details && c.details.length ? md(c.details[0]) : 'No details') +
       '</div>' +
     '</div>';
   });
