@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-09-20T12:48:58",
+  "timestamp": "2026-09-20T13:09:39",
   "cards": [
     {
-      "coin": "AKE",
+      "coin": "AVAX",
       "action": "WATCH",
       "score": 0.147,
       "signals": 1,
       "dd": 0.45,
       "details": [
+        "Status: on your watchlist",
         "trending on CoinGecko right now"
       ]
     },
@@ -18,7 +19,17 @@
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "24h +73.3%; volume 4.6x normal; momentum + volume confirmed"
+        "24h +76.7%; volume 4.6x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "C",
+      "action": "WATCH",
+      "score": 0.117,
+      "signals": 1,
+      "dd": 0.1,
+      "details": [
+        "24h +15.8%; volume 3.5x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -28,7 +39,7 @@
       "signals": 2,
       "dd": 0.1,
       "details": [
-        "trending on CoinGecko right now; 24h +62.5%; volume 3.5x normal; momentum + volume confirmed"
+        "trending on CoinGecko right now; 24h +60.7%; volume 3.5x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -48,7 +59,7 @@
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "volume 10.5x normal; momentum + volume confirmed; real liquidity"
+        "volume 10.2x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
@@ -58,17 +69,27 @@
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "volume 3.7x normal; momentum + volume confirmed; real liquidity"
+        "volume 3.6x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
-      "coin": "C",
+      "coin": "AKE",
       "action": "WATCH",
-      "score": 0.083,
+      "score": 0.077,
       "signals": 1,
-      "dd": 0.1,
       "details": [
-        "volume 3.5x normal; momentum + volume confirmed; real liquidity"
+        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZAMA",
+      "action": "WATCH",
+      "score": 0.077,
+      "signals": 1,
+      "details": [
+        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "trending on CoinGecko right now"
       ]
     },
     {
@@ -92,38 +113,7 @@
       ]
     },
     {
-      "coin": "AVAX",
-      "action": "WATCH",
-      "score": 0.077,
-      "signals": 1,
-      "details": [
-        "Status: on your watchlist",
-        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZAMA",
-      "action": "WATCH",
-      "score": 0.077,
-      "signals": 1,
-      "details": [
-        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "TAO",
-      "action": "WATCH",
-      "score": 0.077,
-      "signals": 1,
-      "details": [
-        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PENGU",
       "action": "WATCH",
       "score": 0.077,
       "signals": 1,
@@ -143,17 +133,7 @@
       ]
     },
     {
-      "coin": "FET",
-      "action": "WATCH",
-      "score": 0.077,
-      "signals": 1,
-      "details": [
-        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "NEAR",
+      "coin": "PENGU",
       "action": "WATCH",
       "score": 0.077,
       "signals": 1,
@@ -164,6 +144,26 @@
     },
     {
       "coin": "VVV",
+      "action": "WATCH",
+      "score": 0.077,
+      "signals": 1,
+      "details": [
+        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PONS",
+      "action": "WATCH",
+      "score": 0.077,
+      "signals": 1,
+      "details": [
+        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "NEAR",
       "action": "WATCH",
       "score": 0.077,
       "signals": 1,
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "coin": "PONS",
+      "coin": "ENA",
       "action": "WATCH",
       "score": 0.077,
       "signals": 1,
@@ -200,7 +200,7 @@
       "signals": 1,
       "details": [
         "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "24h -39.9%; volume 2.6x normal; real liquidity"
+        "24h -43.4%; volume 2.6x normal; real liquidity"
       ]
     },
     {
@@ -210,7 +210,7 @@
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "24h -20.3%; volume 7.1x normal; real liquidity"
+        "24h -21.2%; volume 7.0x normal; real liquidity"
       ]
     }
   ],
