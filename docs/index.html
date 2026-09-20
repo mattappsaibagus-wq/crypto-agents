@@ -759,6 +759,7 @@ function showCoinModal(coin) {
   const gid = coin.coin_id || String(coin.coin).toLowerCase();
   currentGid = gid;
   currentTicker = String(coin.coin).toLowerCase();
+  currentMarket = coin.market || null;
 
   document.getElementById('modalTitle').textContent = coin.coin + ' — ' + coin.action;
   document.getElementById('modalBody').innerHTML =
@@ -780,13 +781,19 @@ function showCoinModal(coin) {
 
   document.getElementById('modalOverlay').classList.add('active');
   requestAnimationFrame(() => loadChart(gid, '7d'));
-  loadCoinStats(gid);
+  // Prefer the build-time snapshot; only hit CoinGecko when it is missing.
+  if (!applyEmbeddedStats()) loadCoinStats(gid);
 }
 
 // Active modal coin, kept so chart/stat loaders can fall back to the ticker
 // if a resolved CoinGecko id turns out to be stale or wrong.
 let currentGid = null;
 let currentTicker = null;
+
+// Market snapshot embedded in data.json by build_static.py (price series +
+// 24h high/low). Preferred over live CoinGecko calls, which the free tier
+// rate-limits per visitor — that is what left charts blank and stats "N/A".
+let currentMarket = null;
 
 let statsRequestId = 0;
 
@@ -795,6 +802,74 @@ function geckoCandidates() {
   if (currentGid) out.push(currentGid);
   if (currentTicker && currentTicker !== currentGid) out.push(currentTicker);
   return out.length ? out : [currentGid || currentTicker];
+}
+
+function setStat(id, val, isChange) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (val === undefined || val === null || (typeof val === 'number' && !isFinite(val))) {
+    el.textContent = '--'; el.className = 'market-stat-value flat'; return;
+  }
+  if (isChange) {
+    el.textContent = (val > 0 ? '+' : '') + val.toFixed(2) + '%';
+    el.className = 'market-stat-value ' + (val > 0 ? 'gain' : val < 0 ? 'loss' : 'flat');
+  } else {
+    el.textContent = '$' + val.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 8});
+    el.className = 'market-stat-value';
+  }
+}
+
+// Bucket a [[timestamp, price], ...] series into OHLC candles.
+function candlesFromSeries(series, buckets) {
+  if (!series || !series.length) return null;
+  const n = Math.max(1, Math.min(buckets, series.length));
+  const bucketSize = Math.ceil(series.length / n);
+  const ohlc = [];
+  for (let i = 0; i < n; i++) {
+    const slice = series.slice(i * bucketSize, Math.min((i + 1) * bucketSize, series.length));
+    if (!slice.length) continue;
+    const vals = slice.map(p => p[1]);
+    ohlc.push({
+      x: slice[0][0],
+      o: vals[0],
+      h: Math.max(...vals),
+      l: Math.min(...vals),
+      c: vals[vals.length - 1]
+    });
+  }
+  return ohlc.length ? ohlc : null;
+}
+
+function embeddedCandles(days) {
+  if (!currentMarket) return null;
+  if (days <= 1) return candlesFromSeries(currentMarket.d1, 24);
+  if (days <= 7) {
+    // Prefer real daily points; fall back to the 7d hourly sparkline.
+    return candlesFromSeries((currentMarket.d30 || []).slice(-7), 7) ||
+           candlesFromSeries(currentMarket.s7, 7);
+  }
+  return candlesFromSeries(currentMarket.d30, 30) ||
+         candlesFromSeries(currentMarket.s7, 30);
+}
+
+function applyEmbeddedStats() {
+  if (!currentMarket) return false;
+  // Only paint what the snapshot actually carries. A market object holding
+  // just the 30d series (batch call rate-limited at build time) must NOT
+  // suppress the live fallback, or every stat stays stuck on "--".
+  const fields = [
+    ['high24h', currentMarket.h24, false],
+    ['low24h', currentMarket.l24, false],
+    ['dailyChange', currentMarket.c24, true],
+    ['weeklyChange', currentMarket.c7, true]
+  ];
+  let applied = 0;
+  fields.forEach(f => {
+    if (f[1] === undefined || f[1] === null) return;
+    setStat(f[0], f[1], f[2]);
+    applied++;
+  });
+  return applied > 0;
 }
 
 async function loadCoinStats(coin) {
@@ -813,18 +888,7 @@ async function loadCoinStats(coin) {
     const high24h = mkt && mkt.high_24h ? mkt.high_24h.usd : null;
     const low24h = mkt && mkt.low_24h ? mkt.low_24h.usd : null;
 
-    function setStat(id, val, isChange) {
-      const el = document.getElementById(id);
-      if (!el) return;
-      if (val === undefined || val === null) { el.textContent = '--'; el.className = 'market-stat-value flat'; return; }
-      if (isChange) {
-        el.textContent = (val > 0 ? '+' : '') + val.toFixed(2) + '%';
-        el.className = 'market-stat-value ' + (val > 0 ? 'gain' : val < 0 ? 'loss' : 'flat');
-      } else {
-        el.textContent = '$' + val.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 8});
-        el.className = 'market-stat-value';
-      }
-    }
+    // setStat() is defined at module scope (shared with the embedded snapshot).
     setStat('high24h', high24h, false);
     setStat('low24h', low24h, false);
     setStat('dailyChange', change24h, true);
@@ -840,6 +904,11 @@ const marketCache = new Map();
 async function getCandlestickData(coin, days) {
   const key = coin + ':' + days;
   if (marketCache.has(key)) return marketCache.get(key);
+
+  // Build-time snapshot first: instant candles, no rate limits.
+  const embedded = embeddedCandles(days);
+  if (embedded) { marketCache.set(key, embedded); return embedded; }
+
   try {
     // Try the resolved id first, then the raw ticker (covers a stale/wrong id).
     let data = null;
