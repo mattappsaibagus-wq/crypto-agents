@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-20T15:25:11",
+  "timestamp": "2026-09-20T15:41:50",
   "cards": [
     {
       "coin": "ZEC",
@@ -19,7 +19,7 @@
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "24h +59.6%; volume 5.0x normal; momentum + volume confirmed"
+        "24h +63.6%; volume 4.0x normal; momentum + volume confirmed"
       ],
       "coin_id": "celer-network"
     },
@@ -30,7 +30,7 @@
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "24h +20.3%; volume 4.2x normal; momentum + volume confirmed"
+        "24h +27.5%; volume 4.4x normal; momentum + volume confirmed"
       ],
       "coin_id": "saga-2"
     },
@@ -41,7 +41,7 @@
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "24h +21.9%; volume 4.1x normal; momentum + volume confirmed"
+        "24h +20.5%; volume 4.1x normal; momentum + volume confirmed"
       ],
       "coin_id": "chainbase"
     },
@@ -52,7 +52,7 @@
       "signals": 2,
       "dd": 0.1,
       "details": [
-        "trending on CoinGecko right now; 24h +47.6%; volume 3.4x normal; momentum + volume confirmed"
+        "trending on CoinGecko right now; 24h +32.5%; volume 3.4x normal; momentum + volume confirmed"
       ],
       "coin_id": "harmony"
     },
@@ -90,17 +90,6 @@
       "coin_id": "venice-token"
     },
     {
-      "coin": "FIRO",
-      "action": "WATCH",
-      "score": 0.077,
-      "signals": 1,
-      "details": [
-        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "trending on CoinGecko right now"
-      ],
-      "coin_id": "zcoin"
-    },
-    {
       "coin": "NEAR",
       "action": "WATCH",
       "score": 0.077,
@@ -110,6 +99,17 @@
         "trending on CoinGecko right now"
       ],
       "coin_id": "near"
+    },
+    {
+      "coin": "FIRO",
+      "action": "WATCH",
+      "score": 0.077,
+      "signals": 1,
+      "details": [
+        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "trending on CoinGecko right now"
+      ],
+      "coin_id": "zcoin"
     },
     {
       "coin": "PENGU",
@@ -146,17 +146,6 @@
       "coin_id": "avalanche-2"
     },
     {
-      "coin": "SUI",
-      "action": "WATCH",
-      "score": 0.077,
-      "signals": 1,
-      "details": [
-        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "trending on CoinGecko right now"
-      ],
-      "coin_id": "sui"
-    },
-    {
       "coin": "DRV",
       "action": "WATCH",
       "score": 0.077,
@@ -168,7 +157,7 @@
       "coin_id": "derive"
     },
     {
-      "coin": "PONS",
+      "coin": "SUI",
       "action": "WATCH",
       "score": 0.077,
       "signals": 1,
@@ -176,7 +165,7 @@
         "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "trending on CoinGecko right now"
       ],
-      "coin_id": "pons"
+      "coin_id": "sui"
     },
     {
       "coin": "HBAR",
@@ -201,13 +190,24 @@
       "coin_id": "arbitrum"
     },
     {
+      "coin": "PONS",
+      "action": "WATCH",
+      "score": 0.077,
+      "signals": 1,
+      "details": [
+        "Flag: \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "trending on CoinGecko right now"
+      ],
+      "coin_id": "pons"
+    },
+    {
       "coin": "G",
       "action": "AVOID",
       "score": -0.09,
       "signals": 1,
       "dd": 0.1,
       "details": [
-        "24h -19.3%; volume 7.1x normal; real liquidity"
+        "24h -19.1%; volume 4.8x normal; real liquidity"
       ],
       "coin_id": "g-token"
     }
