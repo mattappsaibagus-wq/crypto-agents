@@ -172,9 +172,45 @@ def main():
         with open(SIGNALS_FILE, "r") as f:
             signals = json.load(f)
 
+    # Map ticker -> CoinGecko id from the pipeline's own resolution
+    # (signals[].details.coin_id). The dashboard needs the *id*
+    # (e.g. "celer-network"), not the ticker ("CELR"), for chart/stats calls.
+    # First occurrence wins: later duplicate signals from other agents may
+    # carry coin_id=None and must not overwrite a real mapping.
+    coin_id_map = {}
+    for s in signals:
+        sym = (s.get("coin") or "").upper()
+        cid = (s.get("details") or {}).get("coin_id")
+        if sym and cid and sym not in coin_id_map:
+            coin_id_map[sym] = cid
+
+    # Fallback for tickers the current signals.json doesn't cover:
+    # reuse the pipeline's own resolver (curated KNOWN_IDS + ranked list).
+    try:
+        sys.path.insert(0, BASE_DIR)
+        from agents.base import coin_id_for as _coin_id_for
+        _fallback_ok = True
+    except Exception as e:
+        print(f"  coin_id fallback resolver unavailable: {e}")
+        _fallback_ok = False
+
+    cards = parse_report_cards(md)
+    for c in cards:
+        sym = (c.get("coin") or "").upper()
+        cid = coin_id_map.get(sym)
+        if not cid and _fallback_ok:
+            try:
+                cid = _coin_id_for(sym)
+            except Exception:
+                cid = None
+        if cid:
+            c["coin_id"] = cid
+        else:
+            print(f"  note: no CoinGecko id resolved for {sym} (chart will try ticker)")
+
     data = {
         "timestamp": ts,
-        "cards": parse_report_cards(md),
+        "cards": cards,
         "signals": len(signals),
         "workflow_url": workflow_url(),
     }

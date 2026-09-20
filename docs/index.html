@@ -345,6 +345,8 @@ async function loadData() {
       'Updated by GitHub Actions · ' + new Date().toLocaleString();
 
     const cards = data.cards || [];
+    window._allCards = cards; // cache for ticker -> coin_id resolution in modals
+    primeGeckoMap(cards);
     let buy=0, watch=0, sell=0, avoid=0;
     cards.forEach(c => {
       if (c.action==='BUY') buy++;
@@ -487,6 +489,39 @@ function showActionModal(coin, action) {
   loadCoinStats(coin);
 }
 
+// Cache a ticker -> coin_id map from data.json cards (whose ids were
+// resolved by build_static.py via the pipeline's own resolver).
+window._geckoIdByTicker = {};
+function primeGeckoMap(cards) {
+  (cards || []).forEach(c => {
+    if (c.coin && c.coin_id) window._geckoIdByTicker[c.coin.toUpperCase()] = c.coin_id;
+  });
+}
+
+// Resolve the CoinGecko id: card object with coin_id wins; otherwise look up
+// the ticker in the primed map; last resort is the lowercase ticker.
+function geckoId(coin) {
+  if (typeof coin === 'object' && coin !== null) {
+    if (coin.coin_id) return coin.coin_id;
+    coin = coin.coin;
+  }
+  const sym = String(coin || '').toUpperCase();
+  if (window._geckoIdByTicker[sym]) return window._geckoIdByTicker[sym];
+  return String(coin || '').toLowerCase();
+}
+
+// Fetch helper that surfaces HTTP errors (CoinGecko 404/429) instead of
+// silently parsing an error body as chart data.
+async function geckoFetch(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error('CoinGecko HTTP ' + r.status);
+  const data = await r.json();
+  if (data.status && data.status.error_code) {
+    throw new Error('CoinGecko: ' + (data.status.error_message || 'API error'));
+  }
+  return data;
+}
+
 // Load CoinGecko chart data for the selected coin
 function loadCoinChart(coin, timeframe = '24h') {
   const ctx = document.getElementById('coinChart').getContext('2d');
@@ -515,10 +550,13 @@ function loadCoinChart(coin, timeframe = '24h') {
       intervalParam = 'daily';
   }
   
-  // Fetch price data from CoinGecko API
-  fetch(`https://api.coingecko.com/api/v3/coins/${coin.toLowerCase()}/market_chart?vs_currency=usd&days=${daysParam}&interval=${intervalParam}`)
-    .then(r => r.json())
+  // Fetch price data from CoinGecko API (using the resolved coin id, not the ticker)
+  const gecko = geckoId(coin);
+  geckoFetch(`https://api.coingecko.com/api/v3/coins/${encodeURIComponent(gecko)}/market_chart?vs_currency=usd&days=${daysParam}&interval=${intervalParam}`)
     .then(data => {
+      if (!data.prices || !data.prices.length) {
+        throw new Error('No price data for ' + gecko + ' on ' + timeframe);
+      }
       // Format data based on interval
       let dates, pricesVal;
       if (intervalParam === 'hourly') {
@@ -588,8 +626,8 @@ function loadCoinChart(coin, timeframe = '24h') {
 }
 // Load 24h high/low stats from CoinGecko price data
 function loadCoinStats(coin) {
-  fetch(`https://api.coingecko.com/api/v3/coins/${coin.toLowerCase()}/market_chart?vs_currency=usd&days=1&interval=hourly`)
-    .then(r => r.json())
+  const gecko = geckoId(coin);
+  geckoFetch(`https://api.coingecko.com/api/v3/coins/${encodeURIComponent(gecko)}/market_chart?vs_currency=usd&days=1&interval=hourly`)
     .then(data => {
       const prices = data.prices || [];
       if (!prices.length) {
