@@ -754,6 +754,12 @@ function showCoinModal(coin) {
       '</ul>';
   }
 
+  // CoinGecko endpoints need the coin *id* (e.g. "celer-network"), never the
+  // ticker (e.g. "CELR"). build_static.py resolves it into card.coin_id.
+  const gid = coin.coin_id || String(coin.coin).toLowerCase();
+  currentGid = gid;
+  currentTicker = String(coin.coin).toLowerCase();
+
   document.getElementById('modalTitle').textContent = coin.coin + ' — ' + coin.action;
   document.getElementById('modalBody').innerHTML =
     '<div class="chart-container"><canvas id="coinChart"></canvas></div>' +
@@ -765,31 +771,47 @@ function showCoinModal(coin) {
     '<div class="market-stat"><div class="market-stat-label">WEEKLY CHANGE</div><div id="weeklyChange" class="market-stat-value flat">--</div></div>' +
     '</div>' +
     '<div class="tf-btns">' +
-    '<button class="tf-btn" onclick="loadChart(\'' + coin.coin + '\',\'1d\',this)">1d</button>' +
-    '<button class="tf-btn active" onclick="loadChart(\'' + coin.coin + '\',\'7d\',this)">7d</button>' +
-    '<button class="tf-btn" onclick="loadChart(\'' + coin.coin + '\',\'30d\',this)">30d</button>' +
+    '<button class="tf-btn" onclick="loadChart(\'' + gid + '\',\'1d\',this)">1d</button>' +
+    '<button class="tf-btn active" onclick="loadChart(\'' + gid + '\',\'7d\',this)">7d</button>' +
+    '<button class="tf-btn" onclick="loadChart(\'' + gid + '\',\'30d\',this)">30d</button>' +
     '</div>' +
     '<p style="text-align:center;margin-top:8px;font-size:0.72rem;color:var(--text-dim)">Powered by CoinGecko</p>' +
     detailsHtml;
 
   document.getElementById('modalOverlay').classList.add('active');
-  requestAnimationFrame(() => loadChart(coin.coin, '7d'));
-  loadCoinStats(coin.coin);
+  requestAnimationFrame(() => loadChart(gid, '7d'));
+  loadCoinStats(gid);
 }
 
+// Active modal coin, kept so chart/stat loaders can fall back to the ticker
+// if a resolved CoinGecko id turns out to be stale or wrong.
+let currentGid = null;
+let currentTicker = null;
+
 let statsRequestId = 0;
+
+function geckoCandidates() {
+  const out = [];
+  if (currentGid) out.push(currentGid);
+  if (currentTicker && currentTicker !== currentGid) out.push(currentTicker);
+  return out.length ? out : [currentGid || currentTicker];
+}
+
 async function loadCoinStats(coin) {
   const reqId = ++statsRequestId;
+  const candidates = geckoCandidates();
   try {
-    const res = await fetch('https://api.coingecko.com/api/v3/coins/' + encodeURIComponent(coin.toLowerCase()) + '?vs_currency=usd');
-    if (!res.ok) return;
-    const data = await res.json();
-    if (reqId !== statsRequestId) return;
-    const mkt = data.market_data || {};
-    const change24h = mkt.price_change_percentage_24h;
-    const change7d = mkt.price_change_percentage_7d;
-    const high24h = mkt.high_24h?.usd;
-    const low24h = mkt.low_24h?.usd;
+    let data = null;
+    for (const cid of candidates) {
+      const res = await fetch('https://api.coingecko.com/api/v3/coins/' + encodeURIComponent(cid) + '?vs_currency=usd');
+      if (reqId !== statsRequestId) return;
+      if (res.ok) { data = await res.json(); break; }
+    }
+    const mkt = (data && data.market_data) || null;
+    const change24h = mkt ? mkt.price_change_percentage_24h : null;
+    const change7d = mkt ? mkt.price_change_percentage_7d : null;
+    const high24h = mkt && mkt.high_24h ? mkt.high_24h.usd : null;
+    const low24h = mkt && mkt.low_24h ? mkt.low_24h.usd : null;
 
     function setStat(id, val, isChange) {
       const el = document.getElementById(id);
@@ -799,7 +821,7 @@ async function loadCoinStats(coin) {
         el.textContent = (val > 0 ? '+' : '') + val.toFixed(2) + '%';
         el.className = 'market-stat-value ' + (val > 0 ? 'gain' : val < 0 ? 'loss' : 'flat');
       } else {
-        el.textContent = '$' + val.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+        el.textContent = '$' + val.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 8});
         el.className = 'market-stat-value';
       }
     }
@@ -807,7 +829,9 @@ async function loadCoinStats(coin) {
     setStat('low24h', low24h, false);
     setStat('dailyChange', change24h, true);
     setStat('weeklyChange', change7d, true);
-  } catch(e) {}
+  } catch(e) {
+    console.warn('Failed to load coin stats:', e);
+  }
 }
 
 let chartRequestId = 0;
@@ -817,9 +841,15 @@ async function getCandlestickData(coin, days) {
   const key = coin + ':' + days;
   if (marketCache.has(key)) return marketCache.get(key);
   try {
-    const res = await fetch('https://api.coingecko.com/api/v3/coins/' + encodeURIComponent(coin.toLowerCase()) + '/market_chart?vs_currency=usd&days=' + days + '&interval=' + (days <= 1 ? 'hourly' : 'daily'));
-    if (!res.ok) throw new Error('API error');
-    const data = await res.json();
+    // Try the resolved id first, then the raw ticker (covers a stale/wrong id).
+    let data = null;
+    for (const cid of geckoCandidates()) {
+      const res = await fetch('https://api.coingecko.com/api/v3/coins/' + encodeURIComponent(cid) + '/market_chart?vs_currency=usd&days=' + days + '&interval=' + (days <= 1 ? 'hourly' : 'daily'));
+      if (!res.ok) continue;
+      const j = await res.json();
+      if (j && j.prices && j.prices.length) { data = j; break; }
+    }
+    if (!data) return null;
     const prices = data.prices || [];
     if (!prices.length) return null;
     const buckets = days <= 1 ? 24 : days <= 7 ? 7 : 30;
