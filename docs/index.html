@@ -672,6 +672,8 @@ function render(data) {
   renderCards(cards);
 }
 
+function md(s) { return String(s).replace(/\*\*/g, ''); }
+
 function renderCards(cards) {
   const search = (document.getElementById('searchInput')?.value || '').toLowerCase();
   let filtered = cards;
@@ -695,7 +697,7 @@ function renderCards(cards) {
     let detailsHtml = '';
     if (c.details && c.details.length) {
       detailsHtml = '<ul class="detail-list">' +
-        c.details.slice(0, 4).map(d => '<li>' + d + '</li>').join('') +
+        c.details.slice(0, 4).map(d => '<li>' + md(d) + '</li>').join('') +
         '</ul>';
     }
 
