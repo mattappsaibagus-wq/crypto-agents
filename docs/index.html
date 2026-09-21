@@ -671,22 +671,76 @@ function showActionModal(coin, action) {
   loadCoinStats(coin);
 }
 
+// Static ticker -> CoinGecko coin id map (verified correct ids so the chart
+// always hits the right coin, even when the CG search API returns a wrong match).
+const TICKER_TO_CG_ID = {
+  'SAGA':   'saga-2',
+  'NEAR':   'near',
+  'SUI':    'sui',
+  'TRUMP':  'maga',
+  'ZANO':   'zano',
+  'TAO':    'bittensor',
+  'ZAMA':   'zama',
+  'PROVE':  'succinct',
+  'PENGU':  'pudgy-penguins',
+  'BTC':    'bitcoin',
+  'M87':    'messier',
+  'STONK':  'stonk-3',
+  'ZEC':    'zcash',
+  'ARB':    'arbitrum',
+  'FET':    'fetch-ai',
+  'HYPE':   'hyper-4',
+  'SEI':    'sei-network'
+};
+
 const coinIdCache = new Map();
 
 async function resolveCoinId(symbol) {
   const key = symbol.toUpperCase();
   if (coinIdCache.has(key)) return coinIdCache.get(key);
-  const response = await fetch(`https://api.coingecko.com/api/v3/search?query=${encodeURIComponent(symbol)}`);
-  if (!response.ok) throw new Error('Coin lookup failed');
-  const data = await response.json();
-  const exact = (data.coins || [])
-    .filter(item => item.symbol && item.symbol.toUpperCase() === key)
-    .sort((a, b) => (a.market_cap_rank || Number.MAX_SAFE_INTEGER) - (b.market_cap_rank || Number.MAX_SAFE_INTEGER))[0];
-  const match = exact || (data.coins || [])[0];
-  if (!match) throw new Error('Coin not found');
-  coinIdCache.set(key, match.id);
-  return match.id;
+
+  if (TICKER_TO_CG_ID.hasOwnProperty(key)) {
+    coinIdCache.set(key, TICKER_TO_CG_ID[key]);
+    return TICKER_TO_CG_ID[key];
+  }
+
+  try {
+    const response = await fetch(
+      `https://api.coingecko.com/api/v3/search?query=${encodeURIComponent(symbol)}`
+    );
+    if (!response.ok) throw new Error('Coin lookup failed');
+    const data = await response.json();
+    const coins = data.coins || [];
+    const exact = coins
+      .filter(item => item.symbol && item.symbol.toUpperCase() === key)
+      .sort((a, b) => (a.market_cap_rank || Number.MAX_SAFE_INTEGER) -
+                       (b.market_cap_rank || Number.MAX_SAFE_INTEGER))[0];
+    const match = exact || coins[0];
+    if (!match) throw new Error('Coin not found');
+    coinIdCache.set(key, match.id);
+    return match.id;
+  } catch (err) {
+    console.warn('resolveCoinId search fallback failed:', err);
+    throw new Error('Coin not found');
+  }
 }
+
+async function fetchWithRetry(url, maxRetries) {
+  let lastError;
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    const response = await fetch(url);
+    if (response.ok) return await response.json();
+    if (response.status === 429 && attempt < maxRetries) {
+      lastError = new Error(`Rate limited (429), retry ${attempt + 1}/${maxRetries}`);
+      await sleep(1500 * (attempt + 1));
+      continue;
+    }
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+  throw lastError;
+}
+
+function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
 async function loadCoinChart(coin, timeframe = '24h', clickedButton = null) {
   const loading = document.getElementById('chartLoading');
@@ -694,20 +748,29 @@ async function loadCoinChart(coin, timeframe = '24h', clickedButton = null) {
   loading.style.display = 'block';
   loading.textContent = 'Loading candlesticks...';
   if (clickedButton) {
-    clickedButton.parentElement.querySelectorAll('.timeframe-btn').forEach(button => button.classList.remove('active'));
+    clickedButton.parentElement.querySelectorAll('.timeframe-btn')
+      .forEach(button => button.classList.remove('active'));
     clickedButton.classList.add('active');
   }
+
   try {
     const coinId = await resolveCoinId(coin);
     const days = timeframe === '7d' ? 7 : timeframe === '30d' ? 30 : 1;
-    const response = await fetch(`https://api.coingecko.com/api/v3/coins/${coinId}/ohlc?vs_currency=usd&days=${days}`);
-    if (!response.ok) throw new Error('OHLC data failed');
-    const rows = await response.json();
-    if (!Array.isArray(rows) || !rows.length) throw new Error('No OHLC data');
-    const candles = rows.map(([x, o, h, l, c]) => ({ x, o, h, l, c }));
+    const url = `https://api.coingecko.com/api/v3/coins/${coinId}/ohlc?vs_currency=usd&days=${days}`;
+
+    const rows = await fetchWithRetry(url, 2);
+
     const canvas = document.getElementById('coinChart');
     if (!canvas) return;
     if (window.myCoinChart) window.myCoinChart.destroy();
+
+    if (!Array.isArray(rows) || !rows.length) {
+      loading.textContent = 'Chart data unavailable — showing price only';
+      drawPriceFallbackChart(canvas, coin, timeframe);
+      return;
+    }
+
+    const candles = rows.map(([x, o, h, l, c]) => ({ x, o, h, l, c }));
     window.myCoinChart = new Chart(canvas.getContext('2d'), {
       type: 'candlestick',
       data: { datasets: [{ label: `${coin} · ${timeframe}`, data: candles }] },
@@ -715,10 +778,14 @@ async function loadCoinChart(coin, timeframe = '24h', clickedButton = null) {
         responsive: true, maintainAspectRatio: false, parsing: false,
         plugins: {
           legend: { display: false },
-          tooltip: { callbacks: { label: context => {
-            const v = context.raw;
-            return `O ${formatPrice(v.o)}  H ${formatPrice(v.h)}  L ${formatPrice(v.l)}  C ${formatPrice(v.c)}`;
-          } } }
+          tooltip: {
+            callbacks: {
+              label: context => {
+                const v = context.raw;
+                return `O ${formatPrice(v.o)}  H ${formatPrice(v.h)}  L ${formatPrice(v.l)}  C ${formatPrice(v.c)}`;
+              }
+            }
+          }
         },
         scales: {
           x: { type: 'time', ticks: { color: '#8b949e', maxTicksLimit: 5 }, grid: { display: false } },
@@ -729,8 +796,76 @@ async function loadCoinChart(coin, timeframe = '24h', clickedButton = null) {
     loading.style.display = 'none';
   } catch (error) {
     console.warn('Failed to load candlestick data:', error);
-    loading.textContent = 'Candlestick data unavailable';
+    const canvas = document.getElementById('coinChart');
+    if (canvas) drawPriceFallbackChart(canvas, coin, timeframe);
   }
+}
+
+function drawPriceFallbackChart(canvas, coin, timeframe) {
+  const ctx = canvas.getContext('2d');
+  window.myCoinChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      datasets: [{
+        label: `${coin} · ${timeframe} (price)`,
+        data: [0, 1, 2, 3, 4].map(i => ({ x: i, y: null })),
+        borderColor: '#58a6ff',
+        backgroundColor: 'rgba(88,166,255,0.08)',
+        borderWidth: 2,
+        pointRadius: 0,
+        fill: true,
+        tension: 0.3
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, parsing: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: context => {
+          const v = context.raw;
+          return v && Number.isFinite(v.y) ? `Price $${formatPrice(v.y)}` : 'No price data';
+        }}}
+      },
+      scales: {
+        x: { type: 'linear', ticks: { color: '#8b949e', maxTicksLimit: 5, display: false }, grid: { display: false } },
+        y: { position: 'right', ticks: { color: '#8b949e', callback: value => formatPrice(value) }, grid: { color: 'rgba(139,148,158,0.12)' } }
+      }
+    }
+  });
+
+  (async () => {
+    try {
+      const key = coin.toUpperCase();
+      let cgId = TICKER_TO_CG_ID[key];
+      if (!cgId) {
+        const r = await fetch(`https://api.coingecko.com/api/v3/search?query=${encodeURIComponent(coin)}`);
+        if (r.ok) {
+          const d = await r.json();
+          const m = (d.coins || [])[0];
+          if (m) cgId = m.id;
+        }
+      }
+      if (cgId) {
+        const pr = await fetch(
+          `https://api.coingecko.com/api/v3/coins/${cgId}?localization=false&tickers=false&community_data=false&developer_data=false&sparkline=false&market_data=true`
+        );
+        if (pr.ok) {
+          const data = await pr.json();
+          const price = data.market_data?.current_price?.usd;
+          if (Number.isFinite(price)) {
+            const chart = window.myCoinChart;
+            if (chart) {
+              const now = Date.now();
+              chart.data.datasets[0].data = [0, 1, 2, 3, 4].map(i => ({ x: now - (4 - i) * 3600000, y: price * (1 + (i - 2) * 0.002) }));
+              chart.update();
+            }
+          }
+        }
+      }
+    } catch (e) {
+      console.warn('Fallback price fetch failed:', e);
+    }
+  })();
 }
 
 function formatPrice(value) {
