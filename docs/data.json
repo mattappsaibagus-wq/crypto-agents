@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-21T11:12:47",
+  "timestamp": "2026-09-21T11:25:26",
   "cards": [
     {
       "coin": "SAGA",
@@ -8,16 +8,7 @@
         "**Score:** 0.171",
         "**Signals:** 1 | **DD score:** 0.45",
         "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +20.1%; volume 9.8x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "NEAR",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +20.2%; volume 9.8x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -39,7 +30,25 @@
       ]
     },
     {
+      "coin": "TRUMP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
       "coin": "SUI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "NEAR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -58,21 +67,12 @@
       ]
     },
     {
-      "coin": "TRUMP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "PROVE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.083",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 3.8x normal; momentum + volume confirmed; real liquidity"
+        "**Why:** volume 3.9x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
@@ -106,7 +106,17 @@
       ]
     },
     {
-      "coin": "PHA",
+      "coin": "ZANO",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SEI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -117,6 +127,16 @@
     },
     {
       "coin": "VVV",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PHA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -137,28 +157,7 @@
       ]
     },
     {
-      "coin": "SOL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "SEI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZANO",
+      "coin": "PONS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
