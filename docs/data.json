@@ -1,32 +1,22 @@
 {
-  "timestamp": "2026-09-23T17:15:11",
+  "timestamp": "2026-09-23T21:36:52",
   "cards": [
     {
-      "coin": "SAGA",
-      "action": "BUY",
-      "details": [
-        "**Score:** 0.171",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +32.0%; volume 4.2x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "TAKE",
+      "coin": "TAO",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.141",
+        "**Score:** 0.147",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +75.6%; volume 2.2x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "ASTRO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
         "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SAGA",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.117",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +28.2%; volume 4.5x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -39,7 +29,7 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "ASTRO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -48,7 +38,7 @@
       ]
     },
     {
-      "coin": "LIT",
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -71,31 +61,20 @@
       "details": [
         "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +33.7%; volume 2.2x normal; momentum + volume confirmed"
+        "**Why:** 24h +27.5%; volume 2.3x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "TAKE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.097",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +54.1%; volume 2.4x normal; momentum + volume confirmed"
       ]
     },
     {
       "coin": "NEAR",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZRO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZEC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -116,7 +95,7 @@
       ]
     },
     {
-      "coin": "UNI",
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -126,7 +105,27 @@
       ]
     },
     {
-      "coin": "SUI",
+      "coin": "ZEC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PONS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "JUP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -146,7 +145,7 @@
       ]
     },
     {
-      "coin": "TAO",
+      "coin": "SUI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -156,7 +155,7 @@
       ]
     },
     {
-      "coin": "SOL",
+      "coin": "AVAX",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -167,7 +166,7 @@
       ]
     },
     {
-      "coin": "STONK",
+      "coin": "UNI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -183,7 +182,7 @@
         "**Score:** -0.052",
         "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** 24h -34.7%; volume 2.5x normal; real liquidity"
+        "**Why:** 24h -32.1%; volume 2.0x normal; real liquidity"
       ]
     }
   ],
