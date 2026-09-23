@@ -1,21 +1,31 @@
 {
-  "timestamp": "2026-09-23T11:51:07",
+  "timestamp": "2026-09-23T17:15:11",
   "cards": [
     {
-      "coin": "SNDKB",
-      "action": "WATCH",
+      "coin": "SAGA",
+      "action": "BUY",
       "details": [
-        "**Score:** 0.137",
-        "**Signals:** 1 | **DD score:** 0.6",
-        "**Why:** volume 3.1x normal; momentum + volume confirmed; real liquidity"
+        "**Score:** 0.171",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** 24h +32.0%; volume 4.2x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "M87",
+      "coin": "TAKE",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.128",
-        "**Signals:** 1 | **DD score:** 0.3",
+        "**Score:** 0.141",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Why:** 24h +75.6%; volume 2.2x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "ASTRO",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -38,7 +48,7 @@
       ]
     },
     {
-      "coin": "NEAR",
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -47,11 +57,40 @@
       ]
     },
     {
-      "coin": "UNI",
+      "coin": "RAY",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "CPOOL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.097",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +33.7%; volume 2.2x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "NEAR",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZRO",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -59,17 +98,9 @@
       "coin": "ZEC",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "LIT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -85,7 +116,17 @@
       ]
     },
     {
-      "coin": "MET",
+      "coin": "UNI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SUI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -105,7 +146,7 @@
       ]
     },
     {
-      "coin": "PONS",
+      "coin": "TAO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -126,26 +167,6 @@
       ]
     },
     {
-      "coin": "ARB",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "SUI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "STONK",
       "action": "WATCH",
       "details": [
@@ -154,8 +175,18 @@
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
+    },
+    {
+      "coin": "MUBARAK",
+      "action": "AVOID",
+      "details": [
+        "**Score:** -0.052",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** 24h -34.7%; volume 2.5x normal; real liquidity"
+      ]
     }
   ],
-  "signals": 24,
+  "signals": 27,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
