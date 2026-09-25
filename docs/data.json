@@ -1,22 +1,14 @@
 {
-  "timestamp": "2026-09-24T21:37:33",
+  "timestamp": "2026-09-25T05:07:02",
   "cards": [
     {
-      "coin": "PENGU",
-      "action": "WATCH",
+      "coin": "XAI",
+      "action": "BUY",
       "details": [
-        "**Score:** 0.147",
+        "**Score:** 0.171",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "BGB",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** 24h +15.6%; volume 3.7x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -29,7 +21,16 @@
       ]
     },
     {
-      "coin": "EDEL",
+      "coin": "QNT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "XPL",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -47,49 +48,20 @@
       ]
     },
     {
-      "coin": "NIL",
+      "coin": "BGB",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.097",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +19.0%; volume 2.3x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "XAI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.097",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +33.5%; volume 2.8x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "NOM",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.083",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 18.1x normal; momentum + volume confirmed; real liquidity"
-      ]
-    },
-    {
-      "coin": "ZEC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "QNT",
+      "coin": "STONK",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -104,7 +76,7 @@
       ]
     },
     {
-      "coin": "XMR",
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -114,7 +86,7 @@
       ]
     },
     {
-      "coin": "HYPE",
+      "coin": "EDGE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -124,7 +96,7 @@
       ]
     },
     {
-      "coin": "XPL",
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -134,7 +106,7 @@
       ]
     },
     {
-      "coin": "TAO",
+      "coin": "RHEA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -144,7 +116,7 @@
       ]
     },
     {
-      "coin": "VVV",
+      "coin": "FET",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -154,7 +126,7 @@
       ]
     },
     {
-      "coin": "SUI",
+      "coin": "PEAQ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -164,16 +136,35 @@
       ]
     },
     {
-      "coin": "STONK",
+      "coin": "PONS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PENDLE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SAGA",
+      "action": "AVOID",
+      "details": [
+        "**Score:** -0.09",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h -30.9%; volume 11.5x normal; real liquidity"
       ]
     }
   ],
-  "signals": 26,
+  "signals": 25,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
