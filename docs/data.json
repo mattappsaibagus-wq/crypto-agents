@@ -1,27 +1,17 @@
 {
-  "timestamp": "2026-09-25T12:00:28",
+  "timestamp": "2026-09-25T17:20:38",
   "cards": [
     {
-      "coin": "XAI",
-      "action": "BUY",
-      "details": [
-        "**Score:** 0.171",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +16.5%; volume 4.1x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "M87",
+      "coin": "ONDO",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
+        "**Score:** 0.147",
+        "**Signals:** 1 | **DD score:** 0.45",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "ONDO",
+      "coin": "TRUMP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -39,24 +29,6 @@
       ]
     },
     {
-      "coin": "BP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PENGU",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "ENA",
       "action": "WATCH",
       "details": [
@@ -66,21 +38,58 @@
       ]
     },
     {
+      "coin": "EDEL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PHA",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.099",
+        "**Signals:** 2 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now; 24h +58.5%; volume 2.1x normal; momentum + volume confirmed"
+      ]
+    },
+    {
       "coin": "QI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +235.3%; volume 2.2x normal; momentum + volume confirmed"
+        "**Why:** 24h +136.7%; volume 3.0x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "LINK",
+      "coin": "AERO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "BP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "GRASS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
@@ -97,6 +106,16 @@
       ]
     },
     {
+      "coin": "SUI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
       "coin": "BTC",
       "action": "WATCH",
       "details": [
@@ -108,7 +127,7 @@
       ]
     },
     {
-      "coin": "SUI",
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -118,7 +137,7 @@
       ]
     },
     {
-      "coin": "EDEL",
+      "coin": "PONS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -138,36 +157,15 @@
       ]
     },
     {
-      "coin": "AERO",
-      "action": "WATCH",
+      "coin": "SAGA",
+      "action": "AVOID",
       "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "FET",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZEC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
+        "**Score:** -0.09",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h -16.6%; volume 16.0x normal; real liquidity"
       ]
     }
   ],
-  "signals": 25,
+  "signals": 26,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
