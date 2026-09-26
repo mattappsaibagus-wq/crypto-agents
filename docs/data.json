@@ -1,23 +1,31 @@
 {
-  "timestamp": "2026-09-26T16:31:47",
+  "timestamp": "2026-09-26T21:18:32",
   "cards": [
     {
-      "coin": "RARE",
-      "action": "BUY",
+      "coin": "NEAR",
+      "action": "WATCH",
       "details": [
-        "**Score:** 0.171",
+        "**Score:** 0.147",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +30.9%; volume 9.1x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "SHRUB",
+      "coin": "SUI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.147",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "RARE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +42968.9%; volume 10.3x normal; momentum + volume confirmed"
+        "**Why:** 24h +33.2%; volume 9.0x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -39,7 +47,7 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "QNT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -48,34 +56,25 @@
       ]
     },
     {
-      "coin": "KAS",
+      "coin": "RUNE",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
+        "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +16.8%; volume 2.2x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "FET",
+      "coin": "ASTRO",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
+        "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +71.1%; volume 2.8x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "WLD",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ONDO",
+      "coin": "PAID",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -85,7 +84,47 @@
       ]
     },
     {
-      "coin": "NEAR",
+      "coin": "AERO",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PENGU",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "XRP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "TAO",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ONDO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -106,7 +145,7 @@
       ]
     },
     {
-      "coin": "ENA",
+      "coin": "AMP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -116,47 +155,18 @@
       ]
     },
     {
-      "coin": "AERO",
+      "coin": "ETH",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "VIRTUAL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "QNT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "BP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "FOGO",
+      "coin": "PHA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -166,6 +176,6 @@
       ]
     }
   ],
-  "signals": 25,
+  "signals": 26,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
