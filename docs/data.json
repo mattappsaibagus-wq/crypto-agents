@@ -1,21 +1,12 @@
 {
-  "timestamp": "2026-09-26T21:18:32",
+  "timestamp": "2026-09-27T05:27:50",
   "cards": [
     {
-      "coin": "NEAR",
+      "coin": "ZEC",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "SUI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
+        "**Score:** 0.128",
+        "**Signals:** 1 | **DD score:** 0.3",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -25,11 +16,11 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +33.2%; volume 9.0x normal; momentum + volume confirmed"
+        "**Why:** 24h +53.1%; volume 9.4x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "TRUMP",
+      "coin": "QNT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -47,7 +38,16 @@
       ]
     },
     {
-      "coin": "QNT",
+      "coin": "NEAR",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "TAO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -61,30 +61,22 @@
       "details": [
         "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +16.8%; volume 2.2x normal; momentum + volume confirmed"
+        "**Why:** 24h +24.7%; volume 2.3x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "ASTRO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.097",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +71.1%; volume 2.8x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "PAID",
+      "coin": "BTC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "AERO",
+      "coin": "ONDO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -104,6 +96,36 @@
       ]
     },
     {
+      "coin": "AAVE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PONS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "AERO",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
       "coin": "XRP",
       "action": "WATCH",
       "details": [
@@ -114,7 +136,7 @@
       ]
     },
     {
-      "coin": "TAO",
+      "coin": "WLD",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -124,7 +146,7 @@
       ]
     },
     {
-      "coin": "ONDO",
+      "coin": "RAY",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -134,18 +156,7 @@
       ]
     },
     {
-      "coin": "BTC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "AMP",
+      "coin": "STONK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -155,24 +166,12 @@
       ]
     },
     {
-      "coin": "ETH",
-      "action": "WATCH",
+      "coin": "SAGA",
+      "action": "AVOID",
       "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PHA",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
+        "**Score:** -0.09",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h -19.6%; volume 5.0x normal; real liquidity"
       ]
     }
   ],
