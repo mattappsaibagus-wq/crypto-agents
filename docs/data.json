@@ -1,12 +1,13 @@
 {
-  "timestamp": "2026-09-27T21:28:00",
+  "timestamp": "2026-09-28T05:35:34",
   "cards": [
     {
       "coin": "QNT",
-      "action": "WATCH",
+      "action": "BUY",
       "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
+        "**Score:** 0.167",
+        "**Signals:** 1 | **DD score:** 0.6",
+        "**Suggested size:** up to 1.0% of portfolio",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -16,16 +17,7 @@
       "details": [
         "**Score:** 0.141",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +17.5%; volume 2.9x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "RHEA",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +21.7%; volume 2.8x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -38,7 +30,7 @@
       ]
     },
     {
-      "coin": "EDEL",
+      "coin": "RHEA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -47,7 +39,16 @@
       ]
     },
     {
-      "coin": "TRUMP",
+      "coin": "SEI",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ONDO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -65,7 +66,7 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "SUI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -74,7 +75,7 @@
       ]
     },
     {
-      "coin": "SKY",
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -84,7 +85,7 @@
       ]
     },
     {
-      "coin": "SUI",
+      "coin": "GRT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -94,7 +95,18 @@
       ]
     },
     {
-      "coin": "TAO",
+      "coin": "BTC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "Q",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -104,17 +116,7 @@
       ]
     },
     {
-      "coin": "SHFL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "STONK",
+      "coin": "ZEC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -135,7 +137,7 @@
       ]
     },
     {
-      "coin": "BP",
+      "coin": "GRAM",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -145,7 +147,7 @@
       ]
     },
     {
-      "coin": "ZEC",
+      "coin": "PONS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
