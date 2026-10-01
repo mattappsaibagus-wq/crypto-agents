@@ -7,6 +7,7 @@ import json
 import os
 import time
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from typing import Optional
 
 import requests
@@ -16,6 +17,9 @@ SIGNALS_FILE = os.path.join(DATA_DIR, "signals.json")
 MEMORY_DIR = os.path.join(DATA_DIR, "memory")
 REPORTS_DIR = os.path.join(DATA_DIR, "reports")
 
+# All scan timestamps are recorded in Japan Standard Time (UTC+9).
+JST = ZoneInfo("Asia/Tokyo")
+
 
 def ensure_dirs():
     os.makedirs(MEMORY_DIR, exist_ok=True)
@@ -23,7 +27,7 @@ def ensure_dirs():
 
 
 def now_iso():
-    return datetime.now(timezone.utc).isoformat()
+    return datetime.now(JST).isoformat(timespec="seconds")
 
 
 def api_get(url: str, params: Optional[dict] = None, tries: int = 3):
