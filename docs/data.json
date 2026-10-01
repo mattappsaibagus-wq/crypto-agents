@@ -1,6 +1,16 @@
 {
-  "timestamp": "2026-10-01T11:51:19",
+  "timestamp": "2026-10-01T21:05:49+09:00",
   "cards": [
+    {
+      "coin": "MON",
+      "action": "BUY",
+      "details": [
+        "**Score:** 0.167",
+        "**Signals:** 1 | **DD score:** 0.6",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
     {
       "coin": "QNT",
       "action": "BUY",
@@ -17,7 +27,7 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +31.4%; volume 10.4x normal; momentum + volume confirmed"
+        "**Why:** 24h +28.6%; volume 10.1x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -26,7 +36,7 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +108.9%; volume 26.2x normal; momentum + volume confirmed"
+        "**Why:** 24h +97.9%; volume 26.3x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -66,16 +76,17 @@
       ]
     },
     {
-      "coin": "MON",
+      "coin": "BP",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "BP",
+      "coin": "NEAR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -95,7 +106,7 @@
       ]
     },
     {
-      "coin": "NEAR",
+      "coin": "XRP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -125,16 +136,6 @@
       ]
     },
     {
-      "coin": "UNI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "KNTQ",
       "action": "WATCH",
       "details": [
@@ -145,17 +146,18 @@
       ]
     },
     {
-      "coin": "STONK",
+      "coin": "SOL",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "TAO",
+      "coin": "ENA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -171,7 +173,7 @@
         "**Score:** -0.052",
         "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** 24h -34.1%; volume 2.3x normal; real liquidity"
+        "**Why:** 24h -32.4%; volume 2.2x normal; real liquidity"
       ]
     }
   ],
