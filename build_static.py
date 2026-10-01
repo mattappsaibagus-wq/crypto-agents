@@ -15,6 +15,9 @@ import os
 import subprocess
 import sys
 from datetime import datetime
+from zoneinfo import ZoneInfo
+
+JST = ZoneInfo("Asia/Tokyo")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPORTS_DIR = os.path.join(BASE_DIR, "data", "reports")
@@ -93,9 +96,10 @@ def main():
     ts = None
     fname = os.path.basename(path).replace("report_", "").replace(".md", "")
     try:
-        ts = datetime.strptime(fname, "%Y%m%d_%H%M%S").isoformat()
+        # Report filenames are written in JST by the advisor agent
+        ts = datetime.strptime(fname, "%Y%m%d_%H%M%S").replace(tzinfo=JST).isoformat()
     except Exception:
-        ts = datetime.now().isoformat()
+        ts = datetime.now(JST).isoformat(timespec="seconds")
 
     signals = []
     if os.path.exists(SIGNALS_FILE):

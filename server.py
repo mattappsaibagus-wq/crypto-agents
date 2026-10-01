@@ -25,6 +25,9 @@ import sys
 import threading
 import time
 from datetime import datetime
+from zoneinfo import ZoneInfo
+
+JST = ZoneInfo("Asia/Tokyo")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPORTS_DIR = os.path.join(BASE_DIR, "data", "reports")
@@ -53,7 +56,7 @@ def run_scan_background():
                 [sys.executable, os.path.join(BASE_DIR, "run_pipeline.py")],
                 capture_output=True, text=True, timeout=120, cwd=BASE_DIR,
             )
-            scan_last_run = datetime.now().isoformat()
+            scan_last_run = datetime.now(JST).isoformat(timespec="seconds")
             if result.returncode != 0:
                 scan_last_error = result.stderr[-500:] if result.stderr else "unknown error"
         except Exception as e:
@@ -227,6 +230,20 @@ DASHBOARD_HTML = r"""<!DOCTYPE html>
 <div id="cards"><div class="empty">No report yet — tap Run Full Scan</div></div>
 
 <script>
+// Format any timestamp in Japan Standard Time, e.g. "2026/10/01 15:10 JST".
+// Timestamps without an offset (older scans) were written in UTC by GitHub Actions.
+function fmtJST(ts) {
+  let d = ts;
+  if (!(ts instanceof Date)) {
+    let s = String(ts);
+    if (!/([zZ]|[+-]\d\d:?\d\d)$/.test(s)) s += 'Z';
+    d = new Date(s);
+  }
+  return d.toLocaleString('ja-JP', {
+    timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hour12: false
+  }) + ' JST';
+}
 let pollTimer = null;
 
 async function startScan() {
@@ -275,7 +292,7 @@ async function loadReport() {
       return;
     }
     document.getElementById('lastRun').textContent =
-      'Last scan: ' + new Date(data.timestamp).toLocaleString();
+      'Last scan: ' + fmtJST(data.timestamp);
 
     const cards = data.cards || [];
     let buy=0, watch=0, avoid=0;
@@ -362,13 +379,13 @@ class Handler(http.server.BaseHTTPRequestHandler):
         elif self.path == "/api/report":
             md = get_latest_report()
             if md:
-                ts = datetime.now().isoformat()
+                ts = datetime.now(JST).isoformat(timespec="seconds")
                 # Try to extract timestamp from filename
                 files = sorted(glob.glob(os.path.join(REPORTS_DIR, "report_*.md")))
                 if files:
                     fname = os.path.basename(files[-1]).replace("report_", "").replace(".md", "")
                     try:
-                        ts = datetime.strptime(fname, "%Y%m%d_%H%M%S").isoformat()
+                        ts = datetime.strptime(fname, "%Y%m%d_%H%M%S").replace(tzinfo=JST).isoformat()
                     except Exception:
                         pass
                 self._json({"report": md, "cards": parse_report_cards(md), "timestamp": ts})
