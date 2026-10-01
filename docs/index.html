@@ -486,6 +486,20 @@
 </div>
 
 <script>
+// Format any timestamp in Japan Standard Time, e.g. "2026/10/01 15:10 JST".
+// Timestamps without an offset (older scans) were written in UTC by GitHub Actions.
+function fmtJST(ts) {
+  let d = ts;
+  if (!(ts instanceof Date)) {
+    let s = String(ts);
+    if (!/([zZ]|[+-]\d\d:?\d\d)$/.test(s)) s += 'Z';
+    d = new Date(s);
+  }
+  return d.toLocaleString('ja-JP', {
+    timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hour12: false
+  }) + ' JST';
+}
 let lastTimestamp = null;
 
 // Async function to load data from data.json
@@ -496,7 +510,7 @@ async function loadData() {
 
     if (data.timestamp) {
       document.getElementById('lastRun').textContent =
-        'Last scan: ' + new Date(data.timestamp).toLocaleString();
+        'Last scan: ' + fmtJST(data.timestamp);
       lastTimestamp = data.timestamp;
     }
 
@@ -505,7 +519,7 @@ async function loadData() {
 
     document.getElementById('signalCount').textContent = data.signals + ' signals';
     document.getElementById('updated').textContent =
-      'Updated by GitHub Actions · ' + new Date().toLocaleString();
+      'Updated by GitHub Actions · ' + fmtJST(new Date());
 
     const cards = data.cards || [];
     let buy=0, watch=0, sell=0, avoid=0;
