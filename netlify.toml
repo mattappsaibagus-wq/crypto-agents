@@ -1,12 +1,27 @@
 [build]
-  publish = "docs"
+publish = "docs"
+
+# The 6-hourly scan commits only docs/data.json. Its commits are tagged
+# [skip netlify] (see .github/workflows/scan.yml), so Netlify doesn't spend a
+# production deploy on each scan. Instead, data.json is proxied live from
+# GitHub Pages, which the same workflow deploys after every scan.
+[[redirects]]
+from = "/data.json"
+to = "https://mattappsaibagus-wq.github.io/crypto-agents/data.json"
+status = 200
+force = true
+
+[[headers]]
+for = "/data.json"
+[headers.values]
+Cache-Control = "no-store"
 
 [[redirects]]
-  from = "/api/trigger-scan"
-  to = "/.netlify/functions/trigger-scan"
-  status = 200
+from = "/api/trigger-scan"
+to = "/.netlify/functions/trigger-scan"
+status = 200
 
 [[redirects]]
-  from = "/api/run"
-  to = "/.netlify/functions/trigger-scan"
-  status = 200
+from = "/api/run"
+to = "/.netlify/functions/trigger-scan"
+status = 200
