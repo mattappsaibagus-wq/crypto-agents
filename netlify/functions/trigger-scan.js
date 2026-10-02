@@ -1,108 +1,80 @@
+// Starts the "Auto-scan" GitHub Actions workflow (scan.yml) on demand.
+// Called via /api/trigger-scan or /api/run (see netlify.toml redirects).
+//
+// Uses the workflow_dispatch API, which matches the `workflow_dispatch:`
+// trigger already in scan.yml. (The old version sent a repository_dispatch
+// event that scan.yml never listened for, so nothing ran.)
+
 const https = require('https');
-const crypto = require('crypto');
 
-exports.handler = async (event, context) => {
+const REPO_OWNER = 'mattappsaibagus-wq';
+const REPO_NAME = 'crypto-agents';
+const WORKFLOW_FILE = 'scan.yml';
+const BRANCH = 'main';
+
+function json(statusCode, body) {
+  return {
+    statusCode,
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  };
+}
+
+exports.handler = async () => {
+  // The Netlify variable is currently named GITHUN_TOKEN (typo); accept both
+  // so the function works whether or not it gets renamed later.
+  const githubToken = process.env.GITHUB_TOKEN || process.env.GITHUN_TOKEN;
+  if (!githubToken) {
+    return json(500, {
+      success: false,
+      error: 'GitHub token not configured. Add GITHUB_TOKEN in Netlify → Project configuration → Environment variables (needs Actions write access to crypto-agents).',
+    });
+  }
+
+  const payload = JSON.stringify({ ref: BRANCH });
+  const options = {
+    hostname: 'api.github.com',
+    port: 443,
+    path: `/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/dispatches`,
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${githubToken}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'User-Agent': 'crypto-agents-dashboard',
+      'Content-Type': 'application/json',
+      'Content-Length': Buffer.byteLength(payload),
+    },
+  };
+
   try {
-    // Get the GitHub token from Netlify environment variables
-    const githubToken = process.env.GITHUB_TOKEN;
-    if (!githubToken) {
-      return {
-        statusCode: 500,
-        body: JSON.stringify({
-          error: 'GitHub token not configured in Netlify. Please add a GITHUB_TOKEN environment variable in Netlify Site Settings → Environment with repo scope.'
-        })
-      };
-    }
-
-    // Repository details
-    const repoOwner = 'mattappsaibagus-wq';
-    const repoName = 'crypto-agents';
-    const workflowId = 'scan.yml'; // Workflow file name
-    
-    // GitHub API endpoint to trigger workflow dispatch
-    const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/dispatches`;
-    
-    const requestBody = {
-      event_type: 'workflow_dispatch',
-      client_payload: {
-        triggered_from: 'netlify_dashboard',
-        timestamp: new Date().toISOString()
-      }
-    };
-
-    const options = {
-      hostname: 'api.github.com',
-      port: 443,
-      path: `/repos/${repoOwner}/${repoName}/dispatches`,
-      method: 'POST',
-      headers: {
-        'Authorization': `token ${githubToken}`,
-        'Accept': 'application/vnd.github.v3+json',
-        'User-Agent': 'crypto-agents-dashboard',
-        'Content-Type': 'application/json',
-        'Content-Length': JSON.stringify(requestBody).length
-      }
-    };
-
-    const promise = new Promise((resolve, reject) => {
+    const result = await new Promise((resolve, reject) => {
       const req = https.request(options, (res) => {
         let data = '';
-        res.on('data', (chunk) => {
-          data += chunk;
-        });
-        res.on('end', () => {
-          if (res.statusCode === 204 || res.statusCode === 200) {
-            resolve({
-              statusCode: 200,
-              body: JSON.stringify({
-                success: true,
-                message: 'GitHub Actions workflow triggered successfully',
-                status: res.statusCode,
-                timestamp: new Date().toISOString()
-              })
-            });
-          } else {
-            let errorData;
-            try {
-              errorData = JSON.parse(data);
-            } catch (e) {
-              errorData = { message: data };
-            }
-            resolve({
-              statusCode: res.statusCode || 500,
-              body: JSON.stringify({
-                success: false,
-                error: `GitHub API error: ${res.statusCode || 'Unknown'} - ${errorData.message || 'Unknown error'}`,
-                details: errorData
-              })
-            });
-          }
-        });
+        res.on('data', (chunk) => { data += chunk; });
+        res.on('end', () => resolve({ status: res.statusCode, data }));
       });
-
-      req.on('error', (error) => {
-        reject({
-          statusCode: 500,
-          body: JSON.stringify({
-            success: false,
-            error: `Request error: ${error.message}`
-          })
-        });
-      });
-
-      req.write(JSON.stringify(requestBody));
+      req.on('error', reject);
+      req.write(payload);
       req.end();
     });
 
-    return await promise;
-    
+    if (result.status === 204) {
+      return json(200, {
+        success: true,
+        message: 'Scan started. Fresh results appear on the dashboard in a few minutes.',
+        workflow_url: `https://github.com/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}`,
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    let details;
+    try { details = JSON.parse(result.data); } catch (e) { details = { message: result.data }; }
+    return json(result.status || 500, {
+      success: false,
+      error: `GitHub API error ${result.status}: ${details.message || 'Unknown error'}`,
+    });
   } catch (error) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({
-        success: false,
-        error: `Server error: ${error.message}`
-      })
-    };
+    return json(500, { success: false, error: `Request error: ${error.message}` });
   }
 };
