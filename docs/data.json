@@ -1,8 +1,17 @@
 {
-  "timestamp": "2026-10-03T00:30:38+09:00",
+  "timestamp": "2026-10-03T01:11:50+09:00",
   "cards": [
     {
-      "coin": "NEAR",
+      "coin": "BLAST",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.147",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "EDEL",
       "action": "WATCH",
       "details": [
         "**Score:** 0.147",
@@ -16,7 +25,7 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +2157.0%; volume 5.5x normal; momentum + volume confirmed"
+        "**Why:** 24h +2455.4%; volume 5.1x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -25,7 +34,7 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +22.8%; volume 6.9x normal; momentum + volume confirmed"
+        "**Why:** 24h +26.5%; volume 6.9x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -43,16 +52,7 @@
       "details": [
         "**Score:** 0.099",
         "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h +46.5%; volume 2.3x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "MAGIC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.097",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +22.7%; volume 2.8x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now; 24h +44.0%; volume 2.4x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "coin": "TRUMP",
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "coin": "EDEL",
+      "coin": "QNT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "coin": "BLAST",
+      "coin": "NEAR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -106,57 +106,7 @@
       ]
     },
     {
-      "coin": "QNT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PENGU",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "BP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ONDO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZEC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ZRO",
+      "coin": "TRUMP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -176,7 +126,47 @@
       ]
     },
     {
-      "coin": "ENA",
+      "coin": "BP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "CARDS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SKY",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "FET",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZRO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -192,19 +182,19 @@
         "**Score:** -0.052",
         "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** 24h -62.6%; volume 2.2x normal; real liquidity"
+        "**Why:** 24h -61.8%; volume 2.3x normal; real liquidity"
       ]
     },
     {
-      "coin": "ALICE",
+      "coin": "MOVR",
       "action": "AVOID",
       "details": [
         "**Score:** -0.09",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -15.7%; volume 4.9x normal; real liquidity"
+        "**Why:** 24h -25.8%; volume 3.8x normal; real liquidity"
       ]
     }
   ],
-  "signals": 30,
+  "signals": 29,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
