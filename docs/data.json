@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-10-02T19:17:08+09:00",
+  "timestamp": "2026-10-02T21:51:28+09:00",
   "cards": [
     {
-      "coin": "NEAR",
+      "coin": "SAND",
       "action": "WATCH",
       "details": [
         "**Score:** 0.147",
@@ -16,29 +16,11 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +29.7%; volume 6.2x normal; momentum + volume confirmed"
+        "**Why:** 24h +21.9%; volume 6.6x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "SCR",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.117",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +21.3%; volume 10.8x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "SAND",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "TRUMP",
+      "coin": "SC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -65,7 +47,25 @@
       ]
     },
     {
-      "coin": "ENA",
+      "coin": "ALICE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 6.5x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
+      "coin": "SCR",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 11.6x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
+      "coin": "NEAR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -75,7 +75,17 @@
       ]
     },
     {
-      "coin": "VRAX",
+      "coin": "TRUMP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ENA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -95,11 +105,32 @@
       ]
     },
     {
-      "coin": "MON",
+      "coin": "ENJ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "LIT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ETH",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
@@ -116,7 +147,7 @@
       ]
     },
     {
-      "coin": "PRL",
+      "coin": "VVV",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -126,7 +157,7 @@
       ]
     },
     {
-      "coin": "MANA",
+      "coin": "AAVE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -136,27 +167,7 @@
       ]
     },
     {
-      "coin": "CARDS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "KAS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "SKY",
+      "coin": "MON",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -171,10 +182,10 @@
       "details": [
         "**Score:** -0.09",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -22.4%; volume 4.7x normal; real liquidity"
+        "**Why:** 24h -29.4%; volume 4.3x normal; real liquidity"
       ]
     }
   ],
-  "signals": 26,
+  "signals": 27,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
