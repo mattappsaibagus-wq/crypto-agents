@@ -458,6 +458,11 @@
   Click to view the latest coin count
 </div>
 
+<button class="btn btn-secondary" id="scanNowBtn" type="button">Run scan now</button>
+<div id="scanNowStatus" role="status" aria-live="polite" style="text-align:center;color:var(--muted);font-size:0.75rem;margin-top:4px;">
+  Starts a fresh scan on GitHub &middot; results arrive in a few minutes
+</div>
+
 <div class="summary-row" id="summaryRow" hidden>
   <div class="summary-chip chip-buy" id="buyCount">0<br><small>BUY</small></div>
   <div class="summary-chip chip-watch" id="watchCount">0<br><small>WATCH</small></div>
@@ -951,6 +956,53 @@ document.getElementById('runBtn').addEventListener('click', async function(e) {
   btn.disabled = false;
 });
 
+// "Run scan now": starts the GitHub Actions scan via the Netlify function.
+// Results load automatically: pollForUpdates() reloads when data.json changes.
+const SCAN_COOLDOWN_MS = 3 * 60 * 1000;
+let scanPendingSince = null;
+
+function scanCooldownLeft() {
+  let last = 0;
+  try { last = Number(localStorage.getItem('lastScanTrigger') || 0); } catch (e) {}
+  return Math.max(0, last + SCAN_COOLDOWN_MS - Date.now());
+}
+
+function setScanBtnIdle() {
+  const btn = document.getElementById('scanNowBtn');
+  const left = scanCooldownLeft();
+  if (left > 0) {
+    btn.disabled = true;
+    btn.textContent = 'Scan running… (' + Math.ceil(left / 60000) + ' min)';
+    setTimeout(setScanBtnIdle, 15000);
+  } else {
+    btn.disabled = false;
+    btn.textContent = 'Run scan now';
+  }
+}
+
+document.getElementById('scanNowBtn').addEventListener('click', async function(e) {
+  e.preventDefault();
+  const btn = this;
+  const statusEl = document.getElementById('scanNowStatus');
+  if (btn.disabled) return;
+  btn.disabled = true;
+  btn.textContent = 'Starting scan…';
+  try {
+    const res = await fetch('/api/trigger-scan', { method: 'POST' });
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok || !body.success) throw new Error(body.error || ('HTTP ' + res.status));
+    try { localStorage.setItem('lastScanTrigger', String(Date.now())); } catch (err) {}
+    scanPendingSince = lastTimestamp;
+    statusEl.textContent = 'Scan started. New results will load here automatically in a few minutes.';
+  } catch (err) {
+    console.warn('Run scan failed:', err);
+    statusEl.textContent = 'Could not start the scan (' + err.message + '). Please try again later.';
+  }
+  setScanBtnIdle();
+});
+
+setScanBtnIdle();
+
 loadData();
 
 function pollForUpdates() {
@@ -958,6 +1010,12 @@ function pollForUpdates() {
     .then(r => r.json())
     .then(data => {
       if (data.timestamp && data.timestamp !== lastTimestamp) {
+        if (scanPendingSince !== null) {
+          scanPendingSince = null;
+          try { localStorage.removeItem('lastScanTrigger'); } catch (e) {}
+          document.getElementById('scanNowStatus').textContent = 'Fresh scan results loaded.';
+          setScanBtnIdle();
+        }
         loadData();
       }
     })
