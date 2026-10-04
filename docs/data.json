@@ -1,23 +1,22 @@
 {
-  "timestamp": "2026-10-04T21:33:44+09:00",
+  "timestamp": "2026-10-05T06:39:38+09:00",
   "cards": [
     {
-      "coin": "AGENCY",
-      "action": "BUY",
+      "coin": "GTC",
+      "action": "WATCH",
       "details": [
-        "**Score:** 0.194",
-        "**Signals:** 1 | **DD score:** 0.6",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +902.4%; volume 3.2x normal; momentum + volume confirmed"
+        "**Score:** 0.141",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Why:** 24h +38.0%; volume 2.8x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "AIN",
+      "coin": "FET",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.117",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +136.1%; volume 4.0x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
@@ -30,26 +29,7 @@
       ]
     },
     {
-      "coin": "SOL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Status:** on your watchlist",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "BEAM",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ONDO",
+      "coin": "GRASS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -67,7 +47,7 @@
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "NEAR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -76,7 +56,25 @@
       ]
     },
     {
-      "coin": "NEAR",
+      "coin": "PONS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "AIN",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 4.0x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
+      "coin": "ZEC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -86,18 +84,7 @@
       ]
     },
     {
-      "coin": "BTC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "QNT",
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -107,7 +94,7 @@
       ]
     },
     {
-      "coin": "PEPE",
+      "coin": "PUMP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -117,7 +104,7 @@
       ]
     },
     {
-      "coin": "STRK",
+      "coin": "STONK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -127,7 +114,7 @@
       ]
     },
     {
-      "coin": "PRL",
+      "coin": "AERO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -147,18 +134,27 @@
       ]
     },
     {
-      "coin": "AVAX",
+      "coin": "PEAQ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "TAO",
+      "coin": "HNT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "QNT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
