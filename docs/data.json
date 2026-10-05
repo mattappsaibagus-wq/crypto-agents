@@ -1,35 +1,37 @@
 {
-  "timestamp": "2026-10-05T06:39:38+09:00",
+  "timestamp": "2026-10-05T14:54:25+09:00",
   "cards": [
     {
       "coin": "GTC",
+      "action": "BUY",
+      "details": [
+        "**Score:** 0.171",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** 24h +63.3%; volume 6.6x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "HI",
+      "action": "BUY",
+      "details": [
+        "**Score:** 0.167",
+        "**Signals:** 1 | **DD score:** 0.6",
+        "**Suggested size:** up to 1.0% of portfolio",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "AGENTCAT",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.141",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +38.0%; volume 2.8x normal; momentum + volume confirmed"
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
       "coin": "FET",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "SI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "GRASS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -47,15 +49,6 @@
       ]
     },
     {
-      "coin": "NEAR",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "PONS",
       "action": "WATCH",
       "details": [
@@ -65,16 +58,26 @@
       ]
     },
     {
-      "coin": "AIN",
+      "coin": "BTC",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.083",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 4.0x normal; momentum + volume confirmed; real liquidity"
+        "**Status:** already in your holdings",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "ZEC",
+      "coin": "QNT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "BP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -84,7 +87,7 @@
       ]
     },
     {
-      "coin": "LIT",
+      "coin": "EDEL",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -94,7 +97,27 @@
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "NOS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "NEAR",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "GRASS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -114,7 +137,7 @@
       ]
     },
     {
-      "coin": "AERO",
+      "coin": "ZEC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -124,37 +147,7 @@
       ]
     },
     {
-      "coin": "BP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PEAQ",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "HNT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "QNT",
+      "coin": "GALA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -164,6 +157,6 @@
       ]
     }
   ],
-  "signals": 25,
+  "signals": 24,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
