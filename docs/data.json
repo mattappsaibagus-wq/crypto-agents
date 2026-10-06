@@ -1,18 +1,17 @@
 {
-  "timestamp": "2026-10-06T15:33:24+09:00",
+  "timestamp": "2026-10-06T22:12:18+09:00",
   "cards": [
     {
-      "coin": "RLC",
-      "action": "BUY",
+      "coin": "ETHFI",
+      "action": "WATCH",
       "details": [
-        "**Score:** 0.159",
-        "**Signals:** 2 | **DD score:** 0.45",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** trending on CoinGecko right now; 24h +129.1%; volume 3.4x normal; momentum + volume confirmed"
+        "**Score:** 0.147",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "FET",
+      "coin": "ENA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.147",
@@ -26,7 +25,25 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +53.1%; volume 3.8x normal; momentum + volume confirmed"
+        "**Why:** 24h +31.2%; volume 4.7x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "RLC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.109",
+        "**Signals:** 2 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now; 24h +53.7%; volume 3.3x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "NMR",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
@@ -39,45 +56,26 @@
       ]
     },
     {
+      "coin": "API3",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.097",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +18.4%; volume 2.9x normal; momentum + volume confirmed"
+      ]
+    },
+    {
       "coin": "ZRO",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "BTC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Status:** already in your holdings",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "SOL",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Status:** on your watchlist",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PONS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PRL",
+      "coin": "OKB",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -97,7 +95,27 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "QNT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZEC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ONDO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -118,7 +136,7 @@
       ]
     },
     {
-      "coin": "AAVE",
+      "coin": "STONK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -128,7 +146,7 @@
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "PRL",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -138,7 +156,7 @@
       ]
     },
     {
-      "coin": "QNT",
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -148,16 +166,15 @@
       ]
     },
     {
-      "coin": "ENA",
-      "action": "WATCH",
+      "coin": "GTC",
+      "action": "AVOID",
       "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
+        "**Score:** -0.09",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h -29.3%; volume 3.5x normal; real liquidity"
       ]
     }
   ],
-  "signals": 25,
+  "signals": 27,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
