@@ -1,28 +1,27 @@
 {
-  "timestamp": "2026-10-08T15:19:20+09:00",
+  "timestamp": "2026-10-08T20:33:27+09:00",
   "cards": [
     {
-      "coin": "ZEUS",
+      "coin": "OGN",
       "action": "BUY",
       "details": [
-        "**Score:** 0.171",
-        "**Signals:** 1 | **DD score:** 0.45",
+        "**Score:** 0.159",
+        "**Signals:** 2 | **DD score:** 0.45",
         "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +137.3%; volume 4.8x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now; 24h +68.5%; volume 3.1x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "QTC",
-      "action": "BUY",
+      "coin": "TRUMP",
+      "action": "WATCH",
       "details": [
-        "**Score:** 0.167",
-        "**Signals:** 1 | **DD score:** 0.6",
-        "**Suggested size:** up to 1.0% of portfolio",
+        "**Score:** 0.147",
+        "**Signals:** 1 | **DD score:** 0.45",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "NEAR",
+      "coin": "SIMD",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -31,7 +30,7 @@
       ]
     },
     {
-      "coin": "MET",
+      "coin": "QTC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -49,7 +48,7 @@
       ]
     },
     {
-      "coin": "JUP",
+      "coin": "NEAR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -58,7 +57,7 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "STRK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -67,7 +66,7 @@
       ]
     },
     {
-      "coin": "ZRO",
+      "coin": "ALGO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -76,7 +75,7 @@
       ]
     },
     {
-      "coin": "PONS",
+      "coin": "MET",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -87,37 +86,6 @@
     },
     {
       "coin": "RAY",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "STONK",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "LINK",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "W",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -138,7 +106,7 @@
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "AERO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -148,7 +116,28 @@
       ]
     },
     {
-      "coin": "HYPE",
+      "coin": "SOL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZEC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ONDO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
