@@ -1,12 +1,13 @@
 {
-  "timestamp": "2026-10-11T08:06:02+09:00",
+  "timestamp": "2026-10-11T15:01:04+09:00",
   "cards": [
     {
-      "coin": "TIA",
-      "action": "WATCH",
+      "coin": "DRV",
+      "action": "BUY",
       "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
+        "**Score:** 0.167",
+        "**Signals:** 1 | **DD score:** 0.6",
+        "**Suggested size:** up to 1.0% of portfolio",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -16,20 +17,11 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +21.9%; volume 4.9x normal; momentum + volume confirmed"
+        "**Why:** 24h +31.0%; volume 5.7x normal; momentum + volume confirmed"
       ]
     },
     {
       "coin": "SWARM",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "TRUMP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -47,7 +39,16 @@
       ]
     },
     {
-      "coin": "PENGU",
+      "coin": "TIA",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "NEAR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -61,7 +62,38 @@
       "details": [
         "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +27.3%; volume 2.2x normal; momentum + volume confirmed"
+        "**Why:** 24h +107.2%; volume 2.9x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "PENGU",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PUMP",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SOL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
@@ -96,27 +128,7 @@
       ]
     },
     {
-      "coin": "NEAR",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "QNT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "DRV",
+      "coin": "PONS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -136,27 +148,18 @@
       ]
     },
     {
-      "coin": "UNI",
+      "coin": "ETH",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "DIME",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "HYPE",
+      "coin": "CHIP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -171,7 +174,7 @@
       "details": [
         "**Score:** -0.09",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -19.5%; volume 6.5x normal; real liquidity"
+        "**Why:** 24h -30.7%; volume 5.5x normal; real liquidity"
       ]
     }
   ],
