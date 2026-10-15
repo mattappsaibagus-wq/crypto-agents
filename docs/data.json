@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-10-15T13:53:06+09:00",
+  "timestamp": "2026-10-15T20:44:08+09:00",
   "cards": [
     {
-      "coin": "ONDO",
+      "coin": "BLUR",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.147",
+        "**Score:** 0.141",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +19.2%; volume 2.3x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "WAL",
+      "coin": "ZEREBRO",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.144",
-        "**Signals:** 2 | **DD score:** 0.45",
-        "**Why:** trending on CoinGecko right now; 24h +45.1%; volume 2.1x normal; momentum + volume confirmed"
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
       ]
     },
     {
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "coin": "PRL",
+      "coin": "QTC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "coin": "QTC",
+      "coin": "AERO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -66,47 +66,7 @@
       ]
     },
     {
-      "coin": "QNT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PONS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "AERO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "SUI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "FET",
+      "coin": "BP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -126,7 +86,7 @@
       ]
     },
     {
-      "coin": "BP",
+      "coin": "STRK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -136,7 +96,58 @@
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "ETH",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PRL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ATOM",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PENDLE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "BTW",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZAMA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -151,7 +162,7 @@
       "details": [
         "**Score:** -0.09",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h -24.8%; volume 4.0x normal; real liquidity"
+        "**Why:** 24h -23.7%; volume 4.3x normal; real liquidity"
       ]
     }
   ],
