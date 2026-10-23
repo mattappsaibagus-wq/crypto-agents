@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-10-23T20:51:09+09:00",
+  "timestamp": "2026-10-24T02:18:19+09:00",
   "cards": [
     {
-      "coin": "PENGU",
+      "coin": "INIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.147",
@@ -11,21 +11,12 @@
       ]
     },
     {
-      "coin": "BIRB",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.117",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +42.1%; volume 3.1x normal; momentum + volume confirmed"
-      ]
-    },
-    {
       "coin": "BTR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +38.3%; volume 3.2x normal; momentum + volume confirmed"
+        "**Why:** 24h +32.8%; volume 3.9x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -34,7 +25,16 @@
       "details": [
         "**Score:** 0.109",
         "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h +98.6%; volume 4.2x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now; 24h +468.9%; volume 6.6x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "BIRB",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.109",
+        "**Signals:** 2 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now; 24h +68.3%; volume 6.2x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "coin": "PEARL",
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -65,21 +65,11 @@
       ]
     },
     {
-      "coin": "DNA",
+      "coin": "PEARL",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.083",
+        "**Score:** 0.101",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 4.1x normal; momentum + volume confirmed; real liquidity"
-      ]
-    },
-    {
-      "coin": "AERO",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
@@ -94,7 +84,7 @@
       ]
     },
     {
-      "coin": "ENA",
+      "coin": "AERO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -104,7 +94,7 @@
       ]
     },
     {
-      "coin": "PONS",
+      "coin": "QTC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -114,18 +104,7 @@
       ]
     },
     {
-      "coin": "BTC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "TSC",
+      "coin": "XMR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -135,7 +114,7 @@
       ]
     },
     {
-      "coin": "AXIS",
+      "coin": "HYPE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -145,7 +124,7 @@
       ]
     },
     {
-      "coin": "ZRO",
+      "coin": "TAO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -155,7 +134,7 @@
       ]
     },
     {
-      "coin": "STRK",
+      "coin": "CARDS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -165,7 +144,7 @@
       ]
     },
     {
-      "coin": "ZEC",
+      "coin": "VVV",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -175,6 +154,6 @@
       ]
     }
   ],
-  "signals": 27,
+  "signals": 26,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
