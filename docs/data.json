@@ -1,32 +1,40 @@
 {
-  "timestamp": "2026-10-24T13:48:46+09:00",
+  "timestamp": "2026-10-24T20:17:13+09:00",
   "cards": [
     {
-      "coin": "ERA",
-      "action": "BUY",
-      "details": [
-        "**Score:** 0.171",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +36.8%; volume 6.3x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "BFC",
+      "coin": "DOS",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.141",
+        "**Score:** 0.121",
         "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +31.4%; volume 2.4x normal; momentum + volume confirmed"
+        "**Why:** volume 3.0x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
-      "coin": "UP",
+      "coin": "ERA",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.121",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Why:** volume 4.8x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
+      "coin": "BIRB",
       "action": "WATCH",
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +76.2%; volume 5.1x normal; momentum + volume confirmed"
+        "**Why:** 24h +60.6%; volume 13.8x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "BMT",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.117",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +54.1%; volume 7.3x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -35,25 +43,25 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +57.0%; volume 8.3x normal; momentum + volume confirmed"
+        "**Why:** 24h +15.5%; volume 15.0x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "BIRB",
+      "coin": "TREE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.117",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +42.9%; volume 14.6x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "ORDER",
       "action": "WATCH",
       "details": [
         "**Score:** 0.109",
         "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h +178.2%; volume 4.6x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "BMT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.109",
-        "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h +39.4%; volume 3.9x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now; 24h +137.2%; volume 5.9x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -62,20 +70,11 @@
       "details": [
         "**Score:** 0.109",
         "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h +251.7%; volume 9.2x normal; momentum + volume confirmed"
+        "**Why:** trending on CoinGecko right now; 24h +64.7%; volume 8.1x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "AXIS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.109",
-        "**Signals:** 2 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now; 24h +18.6%; volume 5.2x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "NEAR",
+      "coin": "UHI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -85,7 +84,27 @@
       ]
     },
     {
-      "coin": "PEARL",
+      "coin": "DACITY",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "BSC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "AERO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -106,16 +125,6 @@
       ]
     },
     {
-      "coin": "PENGU",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
       "coin": "QTC",
       "action": "WATCH",
       "details": [
@@ -126,7 +135,7 @@
       ]
     },
     {
-      "coin": "DOGE",
+      "coin": "PEARL",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -136,7 +145,7 @@
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "NEAR",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -146,7 +155,7 @@
       ]
     },
     {
-      "coin": "SUI",
+      "coin": "HYPE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -156,7 +165,7 @@
       ]
     },
     {
-      "coin": "ZRO",
+      "coin": "STONK",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -166,38 +175,36 @@
       ]
     },
     {
-      "coin": "ETH",
+      "coin": "TAO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** already in your holdings",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "LINK",
+      "coin": "AXIS",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "GTC",
-      "action": "AVOID",
+      "coin": "CARDS",
+      "action": "WATCH",
       "details": [
-        "**Score:** -0.052",
+        "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** 24h -16.4%; volume 2.2x normal; real liquidity"
+        "**Why:** trending on CoinGecko right now"
       ]
     }
   ],
-  "signals": 32,
+  "signals": 31,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
