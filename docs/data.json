@@ -1,31 +1,23 @@
 {
-  "timestamp": "2026-10-28T07:25:56+09:00",
+  "timestamp": "2026-10-28T14:56:22+09:00",
   "cards": [
     {
-      "coin": "PENGU",
+      "coin": "BTC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.147",
+        "**Signals:** 1 | **DD score:** 0.45",
+        "**Status:** already in your holdings",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "HYPE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.147",
         "**Signals:** 1 | **DD score:** 0.45",
         "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "PONS",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.147",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "AIN",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.117",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +120.0%; volume 4.1x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -34,11 +26,20 @@
       "details": [
         "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +39.4%; volume 13.8x normal; momentum + volume confirmed"
+        "**Why:** 24h +26.7%; volume 16.3x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "STONK",
+      "coin": "EVAA",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.117",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** 24h +130.9%; volume 5.8x normal; momentum + volume confirmed"
+      ]
+    },
+    {
+      "coin": "PENGU",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -47,34 +48,34 @@
       ]
     },
     {
-      "coin": "BANK",
+      "coin": "PEPE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PONS",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "AIN",
       "action": "WATCH",
       "details": [
         "**Score:** 0.097",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +30.4%; volume 2.0x normal; momentum + volume confirmed"
+        "**Why:** 24h +39.2%; volume 2.9x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "POKT",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.097",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** 24h +15.2%; volume 2.2x normal; momentum + volume confirmed"
-      ]
-    },
-    {
-      "coin": "DOOD",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.083",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** volume 7.6x normal; momentum + volume confirmed; real liquidity"
-      ]
-    },
-    {
-      "coin": "ZEC",
+      "coin": "PEARL",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -84,7 +85,7 @@
       ]
     },
     {
-      "coin": "NEAR",
+      "coin": "ONDO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -104,7 +105,7 @@
       ]
     },
     {
-      "coin": "LIT",
+      "coin": "CRV",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -114,7 +115,7 @@
       ]
     },
     {
-      "coin": "PEARL",
+      "coin": "Q",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -124,7 +125,7 @@
       ]
     },
     {
-      "coin": "APT",
+      "coin": "VVV",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -134,7 +135,7 @@
       ]
     },
     {
-      "coin": "CHIP",
+      "coin": "SUI",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -144,7 +145,7 @@
       ]
     },
     {
-      "coin": "PUMP",
+      "coin": "BCH",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -154,7 +155,7 @@
       ]
     },
     {
-      "coin": "GRASS",
+      "coin": "QTC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -164,36 +165,16 @@
       ]
     },
     {
-      "coin": "AERO",
+      "coin": "AXIS",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
+        "**Score:** 0.012",
+        "**Signals:** 2 | **DD score:** n/a",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "JUP",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "WLD",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** trending on CoinGecko right now; 24h -15.9%; volume 2.5x normal; real liquidity"
       ]
     }
   ],
-  "signals": 28,
+  "signals": 27,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
