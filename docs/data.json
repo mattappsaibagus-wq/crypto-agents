@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T15:02:13+09:00",
+  "timestamp": "2026-10-30T22:11:59+09:00",
   "cards": [
     {
       "coin": "PARTI",
@@ -8,11 +8,11 @@
         "**Score:** 0.171",
         "**Signals:** 1 | **DD score:** 0.45",
         "**Suggested size:** up to 1.0% of portfolio",
-        "**Why:** 24h +40.4%; volume 14.3x normal; momentum + volume confirmed"
+        "**Why:** 24h +33.6%; volume 13.4x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "HYPE",
+      "coin": "SP",
       "action": "BUY",
       "details": [
         "**Score:** 0.167",
@@ -22,17 +22,7 @@
       ]
     },
     {
-      "coin": "BTC",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Status:** already in your holdings",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "ENA",
+      "coin": "BEAM",
       "action": "WATCH",
       "details": [
         "**Score:** 0.101",
@@ -50,6 +40,34 @@
       ]
     },
     {
+      "coin": "PEARL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "HYPE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "BTC",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.101",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Status:** already in your holdings",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
       "coin": "BNB",
       "action": "WATCH",
       "details": [
@@ -59,25 +77,7 @@
       ]
     },
     {
-      "coin": "AAVE",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "UNI",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "XMR",
+      "coin": "ENA",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "coin": "FET",
+      "coin": "KNTQ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -108,7 +108,18 @@
       ]
     },
     {
-      "coin": "PEARL",
+      "coin": "ETH",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** already in your holdings",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "AERO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -128,7 +139,7 @@
       ]
     },
     {
-      "coin": "QNT",
+      "coin": "PUMP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -138,22 +149,11 @@
       ]
     },
     {
-      "coin": "CRV",
+      "coin": "ALGO",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
         "**Signals:** 1 | **DD score:** n/a",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "LINK",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
         "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
         "**Why:** trending on CoinGecko right now"
       ]
