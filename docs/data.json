@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-11-13T15:57:59+09:00",
+  "timestamp": "2026-11-14T04:53:24+09:00",
   "cards": [
     {
-      "coin": "DACITYCOIN",
+      "coin": "SEPPUKU",
       "action": "BUY",
       "details": [
         "**Score:** 0.167",
@@ -12,58 +12,40 @@
       ]
     },
     {
-      "coin": "BARD",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.141",
-        "**Signals:** 1 | **DD score:** 0.45",
-        "**Why:** 24h +73.0%; volume 2.2x normal; momentum + volume confirmed"
-      ]
-    },
-    {
       "coin": "BTC",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
+        "**Score:** 0.128",
+        "**Signals:** 1 | **DD score:** 0.3",
         "**Status:** already in your holdings",
         "**Why:** trending on CoinGecko right now"
       ]
     },
     {
-      "coin": "SANC",
+      "coin": "SHELL",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
+        "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +93.9%; volume 5.6x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "BP",
+      "coin": "TEMO",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
+        "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +8122.6%; volume 3.5x normal; momentum + volume confirmed"
       ]
     },
     {
-      "coin": "ZEC",
+      "coin": "SOPH",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.101",
+        "**Score:** 0.117",
         "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
-      ]
-    },
-    {
-      "coin": "AKE",
-      "action": "WATCH",
-      "details": [
-        "**Score:** 0.101",
-        "**Signals:** 1 | **DD score:** 0.1",
-        "**Why:** trending on CoinGecko right now"
+        "**Why:** 24h +39.3%; volume 3.4x normal; momentum + volume confirmed"
       ]
     },
     {
@@ -76,18 +58,25 @@
       ]
     },
     {
-      "coin": "LINK",
+      "coin": "DNA",
       "action": "WATCH",
       "details": [
-        "**Score:** 0.077",
-        "**Signals:** 1 | **DD score:** n/a",
-        "**Status:** on your watchlist",
-        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
-        "**Why:** trending on CoinGecko right now"
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 4.4x normal; momentum + volume confirmed; real liquidity"
       ]
     },
     {
-      "coin": "ZRO",
+      "coin": "SOXSB",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.083",
+        "**Signals:** 1 | **DD score:** 0.1",
+        "**Why:** volume 3.9x normal; momentum + volume confirmed; real liquidity"
+      ]
+    },
+    {
+      "coin": "AKE",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -107,6 +96,27 @@
       ]
     },
     {
+      "coin": "LINK",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "PEPE",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
       "coin": "PEARL",
       "action": "WATCH",
       "details": [
@@ -117,7 +127,7 @@
       ]
     },
     {
-      "coin": "HYPE",
+      "coin": "INJ",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -127,7 +137,7 @@
       ]
     },
     {
-      "coin": "NEAR",
+      "coin": "XRP",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -137,7 +147,7 @@
       ]
     },
     {
-      "coin": "ONDO",
+      "coin": "LIT",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -147,7 +157,28 @@
       ]
     },
     {
-      "coin": "ENA",
+      "coin": "AERO",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "SOL",
+      "action": "WATCH",
+      "details": [
+        "**Score:** 0.077",
+        "**Signals:** 1 | **DD score:** n/a",
+        "**Status:** on your watchlist",
+        "**Flag:** \u26a0 due diligence not yet run on this coin \u2014 treat as provisional",
+        "**Why:** trending on CoinGecko right now"
+      ]
+    },
+    {
+      "coin": "ZEC",
       "action": "WATCH",
       "details": [
         "**Score:** 0.077",
@@ -157,6 +188,6 @@
       ]
     }
   ],
-  "signals": 24,
+  "signals": 27,
   "workflow_url": "https://github.com/mattappsaibagus-wq/crypto-agents/actions/workflows/scan.yml"
 }
